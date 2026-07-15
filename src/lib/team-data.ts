@@ -1,3 +1,10 @@
+import jslImg from "@/assets/jsl.png.asset.json";
+import lewiImg from "@/assets/lewi.jpg.asset.json";
+import toastImg from "@/assets/toast.jpg.asset.json";
+import rd23Img from "@/assets/rd23.png.asset.json";
+import pibbleImg from "@/assets/pibble.jpg.asset.json";
+import generousImg from "@/assets/generous.jpg.asset.json";
+
 export type Player = {
   id: string;
   handle: string;
@@ -5,6 +12,7 @@ export type Player = {
   role: string;
   flag: string;
   joined: string;
+  image?: string;
   stats: {
     matches: number;
     wins: number;
@@ -46,6 +54,7 @@ export const roster: Player[] = [
     role: "4th/3rd press",
     flag: "🇬🇧",
     joined: "Aug, 2025",
+    image: jslImg.url,
     stats: { matches: 0, wins: 0, mvps: 0 },
   },
   {
@@ -55,6 +64,7 @@ export const roster: Player[] = [
     role: "1st/2nd press",
     flag: "🇬🇧",
     joined: "Sept, 2025",
+    image: lewiImg.url,
     stats: { matches: 0, wins: 0, mvps: 0 },
   },
   {
@@ -64,6 +74,7 @@ export const roster: Player[] = [
     role: "2nd press",
     flag: "🇩🇪",
     joined: "Jun, 2026",
+    image: toastImg.url,
     stats: { matches: 0, wins: 0, mvps: 0 },
   },
   {
@@ -73,6 +84,7 @@ export const roster: Player[] = [
     role: "1st/2nd press",
     flag: "🇬🇧",
     joined: "Jul, 2026",
+    image: rd23Img.url,
     stats: { matches: 0, wins: 0, mvps: 0 },
   },
   {
@@ -82,6 +94,7 @@ export const roster: Player[] = [
     role: "3rd/4th press",
     flag: "🇬🇧",
     joined: "Jul, 2026",
+    image: pibbleImg.url,
     stats: { matches: 0, wins: 0, mvps: 0 },
   },
   {
@@ -91,6 +104,7 @@ export const roster: Player[] = [
     role: "1st/2nd press",
     flag: "🇬🇧",
     joined: "Jul, 2026",
+    image: generousImg.url,
     stats: { matches: 0, wins: 0, mvps: 0 },
   },
 ];

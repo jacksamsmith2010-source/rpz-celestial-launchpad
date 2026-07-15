@@ -21,9 +21,20 @@ export function PlayerCard({ player, delay = 0 }: PlayerCardProps) {
       <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo to-violet opacity-0 transition-opacity group-hover:opacity-100" />
       <div className="p-6">
         <div className="flex items-start justify-between">
-          <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-secondary to-accent font-display text-xl font-bold text-foreground">
-            {initials}
-          </div>
+          {player.image ? (
+            <div className="h-14 w-14 overflow-hidden rounded-xl border border-border/50 bg-gradient-to-br from-secondary to-accent">
+              <img
+                src={player.image}
+                alt={player.handle}
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          ) : (
+            <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-secondary to-accent font-display text-xl font-bold text-foreground">
+              {initials}
+            </div>
+          )}
           <span className="text-2xl" aria-hidden="true">
             {player.flag}
           </span>
