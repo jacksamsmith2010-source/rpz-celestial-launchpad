@@ -1,24 +1,152 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ChevronRight } from "lucide-react";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { Hero } from "@/components/Hero";
+import { SectionHeader } from "@/components/SectionHeader";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { StatCard } from "@/components/StatCard";
+import { PlayerCard } from "@/components/PlayerCard";
+import { MatchCard } from "@/components/MatchCard";
+import { PartnerCard } from "@/components/PartnerCard";
+import { teamStats, roster, matches, partners, recruitment } from "@/lib/team-data";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "RPZ CELESTIAL — VR Esports Team" },
+      {
+        name: "description",
+        content:
+          "Official home of RPZ CELESTIAL, a competitive VR esports team competing in Orion Drift. Roster, schedule, stats, and recruitment.",
+      },
+      { property: "og:title", content: "RPZ CELESTIAL — VR Esports Team" },
+      {
+        property: "og:description",
+        content:
+          "Official home of RPZ CELESTIAL, a competitive VR esports team competing in Orion Drift.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+  }),
+  component: HomePage,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function HomePage() {
+  const nextMatch = matches.find((m) => m.status === "upcoming");
+  const recentMatches = matches.filter((m) => m.status !== "upcoming").slice(0, 3);
+  const featuredPlayers = roster.slice(0, 3);
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Hero />
+
+      <AnimatedSection className="container-tight -mt-20 relative z-20">
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-4 lg:gap-4">
+          <StatCard label="Matches" value={String(teamStats.matchesPlayed)} delay={0} />
+          <StatCard label="Win Rate" value={`${teamStats.winRate}%`} delay={0.1} />
+          <StatCard label="Trophies" value={String(teamStats.tournamentWins)} delay={0.2} />
+          <StatCard label="Rank" value={teamStats.currentRank} delay={0.3} />
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection className="container-tight py-20 md:py-28">
+        <SectionHeader
+          eyebrow="Next engagement"
+          title="Upcoming Match"
+          subtitle="Mark your calendars. The next drift is always closer than it looks."
+        />
+        {nextMatch ? (
+          <MatchCard match={nextMatch} />
+        ) : (
+          <p className="text-center text-muted-foreground">No upcoming matches scheduled.</p>
+        )}
+      </AnimatedSection>
+
+      <AnimatedSection className="border-y border-border/50 bg-card/30 py-20 md:py-28">
+        <div className="container-tight">
+          <SectionHeader
+            eyebrow="The squad"
+            title="Featured Roster"
+            subtitle="Five pilots. One orbit. Meet the core of RPZ CELESTIAL."
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredPlayers.map((p, i) => (
+              <PlayerCard key={p.id} player={p} delay={i * 0.1} />
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link
+              to="/roster"
+              className="inline-flex items-center gap-2 rounded-full border border-border/50 bg-background px-6 py-3 text-sm font-bold text-foreground transition-all hover:border-primary/50"
+            >
+              View Full Roster
+              <ChevronRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection className="container-tight py-20 md:py-28">
+        <SectionHeader
+          eyebrow="Recent results"
+          title="Last Matches"
+          subtitle="A quick look at how the constellation has been performing."
+        />
+        <div className="flex flex-col gap-4">
+          {recentMatches.map((m, i) => (
+            <MatchCard key={m.id} match={m} delay={i * 0.1} />
+          ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Link
+            to="/schedule"
+            className="inline-flex items-center gap-2 rounded-full border border-border/50 bg-card px-6 py-3 text-sm font-bold text-foreground transition-all hover:border-primary/50"
+          >
+            Full Schedule
+            <ChevronRight size={16} />
+          </Link>
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection className="relative overflow-hidden border-y border-border/50 bg-secondary py-20 md:py-28">
+        <div className="container-tight relative z-10">
+          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
+            <div className="max-w-2xl">
+              <span className="mb-3 inline-block font-display text-xs font-bold uppercase tracking-widest text-primary">
+                Recruitment
+              </span>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                {recruitment.title}
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+                {recruitment.body}
+              </p>
+            </div>
+            <Link
+              to="/recruitment"
+              className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-bold text-primary-foreground transition-all hover:bg-primary/90 hover:glow"
+            >
+              Apply Now
+              <ChevronRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection className="container-tight py-20 md:py-28">
+        <SectionHeader
+          eyebrow="Our allies"
+          title="Partners"
+          subtitle="The brands and platforms fueling our journey through the stars."
+        />
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {partners.map((p, i) => (
+            <PartnerCard key={p.id} partner={p} delay={i * 0.1} />
+          ))}
+        </div>
+      </AnimatedSection>
+    </>
   );
 }
