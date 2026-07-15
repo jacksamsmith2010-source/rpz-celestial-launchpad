@@ -17,7 +17,9 @@ export function StatCard({ label, value, delay = 0 }: StatCardProps) {
     >
       <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo to-violet" />
       <p className="font-display text-3xl font-bold text-foreground md:text-4xl">{value}</p>
-      <p className="mt-1 text-sm font-medium uppercase tracking-wide text-muted-foreground">{label}</p>
+      <p className="mt-1 text-sm font-medium uppercase tracking-wide text-muted-foreground">
+        {label}
+      </p>
     </motion.div>
   );
 }

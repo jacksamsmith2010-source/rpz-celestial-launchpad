@@ -52,11 +52,15 @@ function StatsPage() {
           <p className="mt-2 font-display text-4xl font-bold text-emerald-400">{wins}</p>
         </div>
         <div className="rounded-2xl border border-border/50 bg-card p-6">
-          <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">Losses</p>
+          <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
+            Losses
+          </p>
           <p className="mt-2 font-display text-4xl font-bold text-rose-400">{losses}</p>
         </div>
         <div className="rounded-2xl border border-border/50 bg-card p-6">
-          <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">Total MVPs</p>
+          <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
+            Total MVPs
+          </p>
           <p className="mt-2 font-display text-4xl font-bold text-primary">{totalMvps}</p>
         </div>
       </div>

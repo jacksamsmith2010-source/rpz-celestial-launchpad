@@ -56,9 +56,18 @@ function AboutPage() {
         <div className="grid gap-4 sm:grid-cols-2">
           {[
             { title: "Precision", body: "Every movement is intentional. Every call is clear." },
-            { title: "Adaptability", body: "Metas shift. Gravity changes. We adjust in real time." },
-            { title: "Team First", body: "Individual skill wins rounds. Trust wins championships." },
-            { title: "Respect", body: "We compete hard and honor the game, the opponents, and the community." },
+            {
+              title: "Adaptability",
+              body: "Metas shift. Gravity changes. We adjust in real time.",
+            },
+            {
+              title: "Team First",
+              body: "Individual skill wins rounds. Trust wins championships.",
+            },
+            {
+              title: "Respect",
+              body: "We compete hard and honor the game, the opponents, and the community.",
+            },
           ].map((value, i) => (
             <div
               key={value.title}

@@ -29,18 +29,11 @@ export const Route = createFileRoute("/recruitment")({
 function RecruitmentPage() {
   return (
     <AnimatedSection className="container-tight pb-20 pt-32 md:pb-28">
-      <SectionHeader
-        eyebrow="Join us"
-        title={recruitment.title}
-        subtitle={recruitment.body}
-      />
+      <SectionHeader eyebrow="Join us" title={recruitment.title} subtitle={recruitment.body} />
 
       <div className="grid gap-6 md:grid-cols-2">
         {recruitment.roles.map((role, i) => (
-          <div
-            key={role.title}
-            className="rounded-2xl border border-border/50 bg-card p-6 md:p-8"
-          >
+          <div key={role.title} className="rounded-2xl border border-border/50 bg-card p-6 md:p-8">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                 {i === 0 ? <Target size={20} /> : <Users size={20} />}

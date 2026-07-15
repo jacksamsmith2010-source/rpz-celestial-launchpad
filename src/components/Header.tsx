@@ -40,9 +40,7 @@ export function Header() {
                 to={item.to}
                 activeProps={{ className: "text-foreground" }}
                 className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-                  active
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                  active ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {item.label}

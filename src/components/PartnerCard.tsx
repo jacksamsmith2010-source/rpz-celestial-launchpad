@@ -28,7 +28,9 @@ export function PartnerCard({ partner, delay = 0 }: PartnerCardProps) {
       transition={{ duration: 0.5, delay }}
       className="relative overflow-hidden rounded-2xl border border-border/50 bg-card p-6"
     >
-      <div className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${tierStyles[partner.tier]}`} />
+      <div
+        className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${tierStyles[partner.tier]}`}
+      />
       <div className="flex items-center gap-2">
         <Star size={16} className="text-primary" />
         <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
