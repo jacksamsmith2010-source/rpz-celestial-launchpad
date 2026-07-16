@@ -11,7 +11,7 @@ export function Footer() {
               RPZ <span className="text-gradient">CELESTIAL</span>
             </Link>
             <p className="mt-2 max-w-sm text-sm text-muted-foreground">
-              A competitive VR esports team chasing the next constellation in Orion Drift.
+              RPZ Esports partners with CELESTIAL to push for recognition and strength across EU and NA.
             </p>
           </div>
 

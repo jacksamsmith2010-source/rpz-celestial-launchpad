@@ -169,7 +169,7 @@ export const partners: Partner[] = [
     name: "RPZ Esports",
     tier: "platinum",
     description:
-      "A growing global VR esports organisation with roots in EU and NA, RPZ Esports partners with CELESTIAL to push for recognition, strength, and a stronger presence across the competitive scene.",
+      "RPZ Esports partners with CELESTIAL to push for recognition and strength across EU and NA.",
   },
 ];
 
