@@ -137,14 +137,12 @@ function HomePage() {
 
       <AnimatedSection className="container-tight py-20 md:py-28">
         <SectionHeader
-          eyebrow="Our allies"
-          title="Partners"
-          subtitle="The brands and platforms fueling our journey through the stars."
+          eyebrow="Our ally"
+          title="Partner"
+          subtitle="RPZ Esports partners with CELESTIAL to push for recognition and strength across EU and NA."
         />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {partners.map((p, i) => (
-            <PartnerCard key={p.id} partner={p} delay={i * 0.1} />
-          ))}
+        <div className="mx-auto max-w-3xl">
+          <PartnerCard partner={partners[0]} />
         </div>
       </AnimatedSection>
     </>

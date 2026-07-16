@@ -165,28 +165,11 @@ export const matches: Match[] = [
 
 export const partners: Partner[] = [
   {
-    id: "s1",
-    name: "NovaVR",
+    id: "rpz-esports",
+    name: "RPZ Esports",
     tier: "platinum",
-    description: "Official VR hardware partner powering our training rigs.",
-  },
-  {
-    id: "s2",
-    name: "Stellar Energy",
-    tier: "gold",
-    description: "Keeping the squad charged through every late-night scrim.",
-  },
-  {
-    id: "s3",
-    name: "Orion Gear",
-    tier: "gold",
-    description: "Premium peripherals designed for zero-gravity precision.",
-  },
-  {
-    id: "s4",
-    name: "HyperStream",
-    tier: "silver",
-    description: "Low-latency streaming for every match and watch party.",
+    description:
+      "A growing global VR esports organisation with roots in EU and NA, RPZ Esports partners with CELESTIAL to push for recognition, strength, and a stronger presence across the competitive scene.",
   },
 ];
 
