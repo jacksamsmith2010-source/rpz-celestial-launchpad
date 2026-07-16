@@ -10,9 +10,6 @@ export function Footer() {
             <Link to="/" className="font-display text-xl font-bold tracking-tight">
               RPZ <span className="text-gradient">CELESTIAL</span>
             </Link>
-            <p className="mt-2 max-w-sm text-sm text-muted-foreground">
-              RPZ Esports partners with CELESTIAL to push for recognition and strength across EU and NA.
-            </p>
           </div>
 
           <div className="flex flex-wrap gap-4">

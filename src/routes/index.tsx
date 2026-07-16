@@ -8,7 +8,7 @@ import { StatCard } from "@/components/StatCard";
 import { PlayerCard } from "@/components/PlayerCard";
 import { MatchCard } from "@/components/MatchCard";
 import { PartnerCard } from "@/components/PartnerCard";
-import { teamStats, roster, matches, partners, recruitment } from "@/lib/team-data";
+import { teamStats, roster, matches, partners } from "@/lib/team-data";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -110,37 +110,9 @@ function HomePage() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection className="relative overflow-hidden border-y border-border/50 bg-secondary py-20 md:py-28">
-        <div className="container-tight relative z-10">
-          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
-            <div className="max-w-2xl">
-              <span className="mb-3 inline-block font-display text-xs font-bold uppercase tracking-widest text-primary">
-                Recruitment
-              </span>
-              <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                {recruitment.title}
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-                {recruitment.body}
-              </p>
-            </div>
-            <Link
-              to="/recruitment"
-              className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-bold text-primary-foreground transition-all hover:bg-primary/90 hover:glow"
-            >
-              Apply Now
-              <ChevronRight size={16} />
-            </Link>
-          </div>
-        </div>
-      </AnimatedSection>
 
       <AnimatedSection className="container-tight py-20 md:py-28">
-        <SectionHeader
-          eyebrow="Our ally"
-          title="Partner"
-          subtitle="RPZ Esports partners with CELESTIAL to push for recognition and strength across EU and NA."
-        />
+        <SectionHeader eyebrow="Our ally" title="Partner" />
         <div className="mx-auto max-w-3xl">
           <PartnerCard partner={partners[0]} />
         </div>
