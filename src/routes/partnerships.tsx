@@ -35,7 +35,7 @@ function PartnershipsPage() {
         subtitle="The organizations that help RPZ CELESTIAL reach further into the stars."
       />
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto max-w-3xl">
         {partners.map((p, i) => (
           <PartnerCard key={p.id} partner={p} delay={i * 0.1} />
         ))}
