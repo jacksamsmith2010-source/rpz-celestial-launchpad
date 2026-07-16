@@ -32,24 +32,6 @@ export function Hero() {
           VR Esports · Orion Drift
         </motion.span>
 
-        <motion.h1
-          initial={reduced ? { opacity: 1 } : { opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-display text-5xl font-bold tracking-tighter text-foreground sm:text-6xl md:text-7xl lg:text-8xl"
-        >
-          RPZ <span className="text-gradient glow-text">CELESTIAL</span>
-        </motion.h1>
-
-        <motion.p
-          initial={reduced ? { opacity: 1 } : { opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl"
-        >
-          We do not chase stars. We race between them. A competitive VR squad built for the
-          zero-gravity battlefields of Orion Drift.
-        </motion.p>
 
         <motion.div
           initial={reduced ? { opacity: 1 } : { opacity: 0, y: 20 }}

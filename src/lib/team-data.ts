@@ -168,14 +168,13 @@ export const partners: Partner[] = [
     id: "rpz-esports",
     name: "RPZ Esports",
     tier: "platinum",
-    description:
-      "RPZ Esports partners with CELESTIAL to push for recognition and strength across EU and NA.",
+    description: "",
   },
 ];
 
 export const recruitment = {
-  title: "Join the Constellation",
-  body: "We are looking for dedicated VR pilots and support staff who want to compete at the highest level of Orion Drift. If you have the reflexes, the discipline, and the team-first mindset, we want to hear from you.",
+  title: "RECRUITMENT",
+  body: "RPZ CELESTIAL is a organization based in EU that is partnered and working with Replitz Esports to become superior and to grow in the competitive VR space in the game Orion Drift, with a EU and now new NA roster, we look for well rounded players both from EU and NA!",
   roles: [
     {
       title: "Competitive Pilot",
