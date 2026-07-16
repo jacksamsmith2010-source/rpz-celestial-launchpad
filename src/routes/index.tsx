@@ -110,7 +110,6 @@ function HomePage() {
         </div>
       </AnimatedSection>
 
-
       <AnimatedSection className="container-tight py-20 md:py-28">
         <SectionHeader eyebrow="Our ally" title="Partner" />
         <div className="mx-auto max-w-3xl">
