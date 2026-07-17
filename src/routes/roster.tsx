@@ -32,7 +32,7 @@ function RosterPage() {
       <SectionHeader
         eyebrow="The constellation"
         title="Team Roster"
-        subtitle="Every star in our orbit. Click through player cards to see roles, regions, and stats."
+        subtitle="Every star in our orbit. Click through player cards to see roles and regions."
       />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {roster.map((p, i) => (

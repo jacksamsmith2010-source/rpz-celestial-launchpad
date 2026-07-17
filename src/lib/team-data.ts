@@ -13,11 +13,6 @@ export type Player = {
   flag: string;
   joined: string;
   image?: string;
-  stats: {
-    matches: number;
-    wins: number;
-    mvps: number;
-  };
 };
 
 export type Match = {
@@ -44,6 +39,10 @@ export const teamStats = {
   winRate: 68,
   tournamentWins: 7,
   currentRank: "#3",
+  wins: 9,
+  losses: 10,
+  goalsFor: 229,
+  goalsAgainst: 178,
 };
 
 export const roster: Player[] = [
@@ -55,7 +54,6 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Aug, 2025",
     image: jslImg.url,
-    stats: { matches: 0, wins: 0, mvps: 0 },
   },
   {
     id: "p2",
@@ -65,7 +63,6 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Sept, 2025",
     image: lewiImg.url,
-    stats: { matches: 0, wins: 0, mvps: 0 },
   },
   {
     id: "p3",
@@ -75,7 +72,6 @@ export const roster: Player[] = [
     flag: "🇩🇪",
     joined: "Jun, 2026",
     image: toastImg.url,
-    stats: { matches: 0, wins: 0, mvps: 0 },
   },
   {
     id: "p4",
@@ -85,7 +81,6 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Jul, 2026",
     image: rd23Img.url,
-    stats: { matches: 0, wins: 0, mvps: 0 },
   },
   {
     id: "p5",
@@ -95,7 +90,6 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Jul, 2026",
     image: pibbleImg.url,
-    stats: { matches: 0, wins: 0, mvps: 0 },
   },
   {
     id: "p6",
@@ -105,7 +99,6 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Jul, 2026",
     image: generousImg.url,
-    stats: { matches: 0, wins: 0, mvps: 0 },
   },
 ];
 
