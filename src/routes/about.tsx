@@ -37,15 +37,13 @@ function AboutPage() {
       <div className="grid gap-12 lg:grid-cols-2">
         <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
           <p>
-            RPZ CELESTIAL was founded in {teamStats.founded} by a group of competitive VR pilots who
-            believed that the future of esports would not be played on a flat screen, but inside it.
-            We started in small community lobbies, grinding Orion Drift ranked ladders until the
-            constellations started to remember our callsigns.
+            RPZ CELESTIAL was founded in {teamStats.founded} by JSL2010. We started as a small
+            community, grinding Orion Drift ranked ladders until we rised in VRML Season 1!
           </p>
           <p>
             Today we are a full roster of dedicated players, coaches, and analysts competing across
-            Europe. Our identity is built on three principles: precision communication, adaptive
-            strategy, and relentless respect for the craft.
+            Europe and North America. Our identity is built on three principles: precision,
+            strategy, and respect.
           </p>
           <p>
             We do not just play in virtual reality. We train, study, and iterate like any elite

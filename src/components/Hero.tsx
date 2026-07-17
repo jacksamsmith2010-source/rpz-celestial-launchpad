@@ -32,6 +32,14 @@ export function Hero() {
           VR Esports · Orion Drift
         </motion.span>
 
+        <motion.h1
+          initial={reduced ? { opacity: 1 } : { opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.15 }}
+          className="font-display text-5xl font-bold text-foreground md:text-7xl"
+        >
+          RPZ CELESTIAL
+        </motion.h1>
 
         <motion.div
           initial={reduced ? { opacity: 1 } : { opacity: 0, y: 20 }}
