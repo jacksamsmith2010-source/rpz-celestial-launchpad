@@ -69,6 +69,18 @@ function StatsPage() {
           <p className="mt-2 font-display text-4xl font-bold text-rose-400">{teamStats.goalsAgainst}</p>
         </div>
       </div>
+
+      <div className="mt-6 grid gap-6">
+        <div className="rounded-2xl border border-border/50 bg-card p-6">
+          <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
+            Goal Differential
+          </p>
+          <p className="mt-2 font-display text-4xl font-bold text-emerald-400">
+            {teamStats.goalsFor > teamStats.goalsAgainst ? "+" : ""}
+            {teamStats.goalsFor - teamStats.goalsAgainst}
+          </p>
+        </div>
+      </div>
     </AnimatedSection>
   );
 }
