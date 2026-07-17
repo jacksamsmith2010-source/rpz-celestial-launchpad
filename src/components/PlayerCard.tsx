@@ -45,21 +45,6 @@ export function PlayerCard({ player, delay = 0 }: PlayerCardProps) {
         <p className="mt-1 text-sm text-muted-foreground">
           {player.name} · Joined {player.joined}
         </p>
-
-        <div className="mt-5 grid grid-cols-3 gap-2 border-t border-border/50 pt-4">
-          <div className="text-center">
-            <p className="font-display text-lg font-bold text-foreground">{player.stats.matches}</p>
-            <p className="text-[10px] uppercase tracking-wider text-muted-foreground">Matches</p>
-          </div>
-          <div className="text-center">
-            <p className="font-display text-lg font-bold text-foreground">{player.stats.wins}</p>
-            <p className="text-[10px] uppercase tracking-wider text-muted-foreground">Wins</p>
-          </div>
-          <div className="text-center">
-            <p className="font-display text-lg font-bold text-foreground">{player.stats.mvps}</p>
-            <p className="text-[10px] uppercase tracking-wider text-muted-foreground">MVPs</p>
-          </div>
-        </div>
       </div>
     </motion.div>
   );
