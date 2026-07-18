@@ -349,15 +349,6 @@ export const matches: Match[] = [
   },
 ];
 
-export const partners: Partner[] = [
-  {
-    id: "rpz-esports",
-    name: "RPZ Esports",
-    tier: "platinum",
-    description: "",
-  },
-];
-
 export const recruitment = {
   title: "RECRUITMENT",
   body: "RPZ CELESTIAL is a organization based in EU that is partnered and working with Replitz Esports to become superior and to grow in the competitive VR space in the game Orion Drift, with a EU and now new NA roster, we look for well rounded players both from EU and NA!",
@@ -380,5 +371,5 @@ export const socials = [
   { name: "X / Twitter", url: "https://x.com/rpzcelestial", handle: "@rpzcelestial" },
   { name: "Twitch", url: "https://twitch.tv/rpzcelestial", handle: "twitch.tv/rpzcelestial" },
   { name: "YouTube", url: "https://youtube.com/@rpzcelestial", handle: "@rpzcelestial" },
-  { name: "Discord", url: "https://discord.gg/rpzcelestial", handle: "discord.gg/rpzcelestial" },
+  { name: "Discord", url: "https://discord.gg/9Y6KYU49uH", handle: "discord.gg/9Y6KYU49uH" },
 ];
