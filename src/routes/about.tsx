@@ -31,41 +31,33 @@ function AboutPage() {
       <SectionHeader
         eyebrow="Our origin"
         title="About RPZ CELESTIAL"
-        subtitle="A team forged in zero gravity, driven by discipline, and aimed at the stars."
+        subtitle="An EU Orion Drift team partnered with Replitz Esports, now expanding into NA."
       />
 
       <div className="grid gap-12 lg:grid-cols-2">
         <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
           <p>
-            RPZ CELESTIAL was founded in {teamStats.founded} by JSL2010. We started as a small
-            community, grinding Orion Drift ranked ladders until we rised in VRML Season 1!
+            RPZ CELESTIAL was founded in {teamStats.founded} by JSL2010. What started as a small
+            crew grinding Orion Drift ranked has grown into a full org partnered with Replitz
+            Esports, competing across EU and now North America.
           </p>
           <p>
-            Today we are a full roster of dedicated players, coaches, and analysts competing across
-            Europe and North America. Our identity is built on three principles: precision,
-            strategy, and respect.
+            We now field two rosters — a proven EU squad and a brand new NA squad — chasing
+            recognition and results in ODC and beyond. Every player is picked for skill, game
+            sense, and the mindset to grow with the org.
           </p>
           <p>
-            We do not just play in virtual reality. We train, study, and iterate like any elite
-            sports team — because VR esports deserves the same discipline as any other arena.
+            We don't just play in VR. We scrim, review VODs, and iterate like any serious esports
+            team — because Orion Drift deserves the same discipline as any other title.
           </p>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
           {[
-            { title: "Precision", body: "Every movement is intentional. Every call is clear." },
-            {
-              title: "Adaptability",
-              body: "Metas shift. Gravity changes. We adjust in real time.",
-            },
-            {
-              title: "Team First",
-              body: "Individual skill wins rounds. Trust wins championships.",
-            },
-            {
-              title: "Respect",
-              body: "We compete hard and honor the game, the opponents, and the community.",
-            },
+            { title: "Competitive", body: "We show up to win. Every scrim, every match, every map." },
+            { title: "Teamwork", body: "Clean calls, clean rotations, clean trust." },
+            { title: "Community", body: "We build with our players and fans, EU and NA." },
+            { title: "Growth", body: "Two rosters, one org, always leveling up." },
           ].map((value, i) => (
             <div
               key={value.title}

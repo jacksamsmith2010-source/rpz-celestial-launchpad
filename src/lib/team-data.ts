@@ -13,6 +13,7 @@ export type Player = {
   flag: string;
   joined: string;
   image?: string;
+  region: "EU" | "NA";
 };
 
 export type Match = {
@@ -23,6 +24,7 @@ export type Match = {
   tournament: string;
   status: "upcoming" | "won" | "lost" | "draw";
   score?: string;
+  games?: string[];
 };
 
 export type Partner = {
@@ -33,17 +35,19 @@ export type Partner = {
 };
 
 export const teamStats = {
-  founded: "2023",
+  founded: "2025",
   region: "Europe",
-  matchesPlayed: 19,
-  winRate: 45,
+  matchesPlayed: 20,
+  winRate: 50,
   tournamentWins: 0,
-  currentRank: "#77",
-  wins: 9,
+  currentRank: "#51",
+  wins: 10,
   losses: 10,
-  goalsFor: 229,
-  goalsAgainst: 178,
+  goalsFor: 241,
+  goalsAgainst: 188,
 };
+
+export const goalDifferential = teamStats.goalsFor - teamStats.goalsAgainst;
 
 export const roster: Player[] = [
   {
@@ -54,6 +58,7 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Aug, 2025",
     image: jslImg.url,
+    region: "EU",
   },
   {
     id: "p2",
@@ -63,6 +68,7 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Sept, 2025",
     image: lewiImg.url,
+    region: "EU",
   },
   {
     id: "p3",
@@ -72,6 +78,7 @@ export const roster: Player[] = [
     flag: "🇩🇪",
     joined: "Jun, 2026",
     image: toastImg.url,
+    region: "EU",
   },
   {
     id: "p4",
@@ -81,6 +88,7 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Jul, 2026",
     image: rd23Img.url,
+    region: "EU",
   },
   {
     id: "p5",
@@ -90,6 +98,7 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Jul, 2026",
     image: pibbleImg.url,
+    region: "EU",
   },
   {
     id: "p6",
@@ -99,6 +108,61 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Jul, 2026",
     image: generousImg.url,
+    region: "EU",
+  },
+  {
+    id: "p7",
+    handle: "TheSmallWhiteShark",
+    name: "Hope.409709",
+    role: "2nd/3rd press",
+    flag: "🇺🇸",
+    joined: "Jul, 2026",
+    region: "NA",
+  },
+  {
+    id: "p8",
+    handle: "Bob34!!",
+    name: "Bob34",
+    role: "4th/3rd press",
+    flag: "🇺🇸",
+    joined: "Jul, 2026",
+    region: "NA",
+  },
+  {
+    id: "p9",
+    handle: "Year2k",
+    name: "Year2k",
+    role: "1st press",
+    flag: "🇺🇸",
+    joined: "Jul, 2026",
+    region: "NA",
+  },
+  {
+    id: "p10",
+    handle: "Hello",
+    name: "mmuko",
+    role: "1st/2nd press",
+    flag: "🇺🇸",
+    joined: "Jul, 2026",
+    region: "NA",
+  },
+  {
+    id: "p11",
+    handle: "Npc_dark",
+    name: "Npc_dark",
+    role: "1st/2nd press",
+    flag: "🇺🇸",
+    joined: "Jul, 2026",
+    region: "NA",
+  },
+  {
+    id: "p12",
+    handle: "poptart",
+    name: "poptart",
+    role: "3rd press",
+    flag: "🇺🇸",
+    joined: "Jul, 2026",
+    region: "NA",
   },
 ];
 
@@ -109,7 +173,8 @@ export const matches: Match[] = [
     time: "Best Of 5",
     opponent: "RCX-ELITE",
     tournament: "ODC SEASON 1",
-    status: "upcoming",
+    status: "won",
+    score: "3-1",
   },
   {
     id: "m2",
@@ -284,35 +349,20 @@ export const matches: Match[] = [
   },
 ];
 
-export const partners: Partner[] = [
-  {
-    id: "rpz-esports",
-    name: "RPZ Esports",
-    tier: "platinum",
-    description: "",
-  },
-];
-
 export const recruitment = {
   title: "RECRUITMENT",
   body: "RPZ CELESTIAL is a organization based in EU that is partnered and working with Replitz Esports to become superior and to grow in the competitive VR space in the game Orion Drift, with a EU and now new NA roster, we look for well rounded players both from EU and NA!",
-  roles: [
-    {
-      title: "Competitive Pilot",
-      requirements: [
-        "Ranked top 500 in Orion Drift ranked ladder",
-        "Available for evening scrims (CEST)",
-        "Willing to review VODs and accept coaching",
-      ],
-    },
-    {
-      title: "Analyst / Coach",
-      requirements: [
-        "Strong understanding of Orion Drift meta and maps",
-        "Experience breaking down match VODs",
-        "Comfortable working remotely with the roster",
-      ],
-    },
+  requirements: [
+    "13+",
+    "Respectful",
+    "Mature",
+    "Skilled",
+    "Good positioning",
+    "Good passing",
+    "Strong game sense",
+    "Communication",
+    "Awareness",
+    "EU or NA",
   ],
   contact: "recruit@rpzcelestial.gg",
 };
@@ -321,5 +371,5 @@ export const socials = [
   { name: "X / Twitter", url: "https://x.com/rpzcelestial", handle: "@rpzcelestial" },
   { name: "Twitch", url: "https://twitch.tv/rpzcelestial", handle: "twitch.tv/rpzcelestial" },
   { name: "YouTube", url: "https://youtube.com/@rpzcelestial", handle: "@rpzcelestial" },
-  { name: "Discord", url: "https://discord.gg/rpzcelestial", handle: "discord.gg/rpzcelestial" },
+  { name: "Discord", url: "https://discord.gg/9Y6KYU49uH", handle: "discord.gg/9Y6KYU49uH" },
 ];
