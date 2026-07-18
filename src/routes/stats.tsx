@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeader } from "@/components/SectionHeader";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { StatCard } from "@/components/StatCard";
-import { teamStats } from "@/lib/team-data";
+import { teamStats, goalDifferential } from "@/lib/team-data";
 
 export const Route = createFileRoute("/stats")({
   head: () => ({
@@ -76,8 +76,8 @@ function StatsPage() {
             Goal Differential
           </p>
           <p className="mt-2 font-display text-4xl font-bold text-emerald-400">
-            {teamStats.goalsFor > teamStats.goalsAgainst ? "+" : ""}
-            {teamStats.goalsFor - teamStats.goalsAgainst}
+            {goalDifferential >= 0 ? "+" : ""}
+            {goalDifferential}
           </p>
         </div>
       </div>

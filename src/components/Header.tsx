@@ -12,7 +12,6 @@ const nav = [
   { label: "Stats", to: "/stats" },
   { label: "About", to: "/about" },
   { label: "Recruitment", to: "/recruitment" },
-  { label: "Partners", to: "/partnerships" },
 ];
 
 export function Header() {

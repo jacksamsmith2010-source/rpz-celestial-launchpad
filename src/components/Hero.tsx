@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, MessageCircle } from "lucide-react";
 
 import heroImage from "@/assets/hero-celestial.jpg";
 
@@ -60,6 +60,15 @@ export function Hero() {
           >
             Meet the Roster
           </Link>
+          <a
+            href="https://discord.gg/9Y6KYU49uH"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-6 py-3 text-sm font-bold text-primary transition-all hover:bg-primary/20"
+          >
+            <MessageCircle size={16} />
+            Join Discord
+          </a>
         </motion.div>
       </div>
 

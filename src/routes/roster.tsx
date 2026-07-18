@@ -27,17 +27,47 @@ export const Route = createFileRoute("/roster")({
 });
 
 function RosterPage() {
+  const eu = roster.filter((p) => p.region === "EU");
+  const na = roster.filter((p) => p.region === "NA");
+
   return (
     <AnimatedSection className="container-tight pb-20 pt-32 md:pb-28">
       <SectionHeader
         eyebrow="The constellation"
         title="Team Roster"
-        subtitle="Every star in our orbit. Click through player cards to see roles and regions."
+        subtitle="Two rosters, one org. Our EU squad and our new NA squad."
       />
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {roster.map((p, i) => (
-          <PlayerCard key={p.id} player={p} delay={i * 0.08} />
-        ))}
+
+      <div className="space-y-16">
+        <section>
+          <div className="mb-6 flex items-center gap-3">
+            <span className="text-2xl">🇪🇺</span>
+            <h2 className="font-display text-2xl font-bold text-foreground">EU Roster</h2>
+            <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">
+              {eu.length} pilots
+            </span>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {eu.map((p, i) => (
+              <PlayerCard key={p.id} player={p} delay={i * 0.08} />
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="mb-6 flex items-center gap-3">
+            <span className="text-2xl">🇺🇸</span>
+            <h2 className="font-display text-2xl font-bold text-foreground">NA Roster</h2>
+            <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">
+              {na.length} pilots
+            </span>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {na.map((p, i) => (
+              <PlayerCard key={p.id} player={p} delay={i * 0.08} />
+            ))}
+          </div>
+        </section>
       </div>
     </AnimatedSection>
   );
