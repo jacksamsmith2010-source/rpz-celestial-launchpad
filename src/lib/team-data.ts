@@ -13,6 +13,7 @@ export type Player = {
   flag: string;
   joined: string;
   image?: string;
+  region: "EU" | "NA";
 };
 
 export type Match = {
@@ -23,6 +24,7 @@ export type Match = {
   tournament: string;
   status: "upcoming" | "won" | "lost" | "draw";
   score?: string;
+  games?: string[];
 };
 
 export type Partner = {
@@ -33,17 +35,19 @@ export type Partner = {
 };
 
 export const teamStats = {
-  founded: "2023",
+  founded: "2025",
   region: "Europe",
-  matchesPlayed: 19,
-  winRate: 45,
+  matchesPlayed: 20,
+  winRate: 50,
   tournamentWins: 0,
-  currentRank: "#77",
-  wins: 9,
+  currentRank: "#51",
+  wins: 10,
   losses: 10,
-  goalsFor: 229,
-  goalsAgainst: 178,
+  goalsFor: 241,
+  goalsAgainst: 188,
 };
+
+export const goalDifferential = teamStats.goalsFor - teamStats.goalsAgainst;
 
 export const roster: Player[] = [
   {
@@ -54,6 +58,7 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Aug, 2025",
     image: jslImg.url,
+    region: "EU",
   },
   {
     id: "p2",
@@ -63,6 +68,7 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Sept, 2025",
     image: lewiImg.url,
+    region: "EU",
   },
   {
     id: "p3",
@@ -72,6 +78,7 @@ export const roster: Player[] = [
     flag: "🇩🇪",
     joined: "Jun, 2026",
     image: toastImg.url,
+    region: "EU",
   },
   {
     id: "p4",
@@ -81,6 +88,7 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Jul, 2026",
     image: rd23Img.url,
+    region: "EU",
   },
   {
     id: "p5",
@@ -90,6 +98,7 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Jul, 2026",
     image: pibbleImg.url,
+    region: "EU",
   },
   {
     id: "p6",
@@ -99,6 +108,7 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Jul, 2026",
     image: generousImg.url,
+    region: "EU",
   },
 ];
 
