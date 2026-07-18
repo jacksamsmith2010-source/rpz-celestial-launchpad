@@ -361,23 +361,17 @@ export const partners: Partner[] = [
 export const recruitment = {
   title: "RECRUITMENT",
   body: "RPZ CELESTIAL is a organization based in EU that is partnered and working with Replitz Esports to become superior and to grow in the competitive VR space in the game Orion Drift, with a EU and now new NA roster, we look for well rounded players both from EU and NA!",
-  roles: [
-    {
-      title: "Competitive Pilot",
-      requirements: [
-        "Ranked top 500 in Orion Drift ranked ladder",
-        "Available for evening scrims (CEST)",
-        "Willing to review VODs and accept coaching",
-      ],
-    },
-    {
-      title: "Analyst / Coach",
-      requirements: [
-        "Strong understanding of Orion Drift meta and maps",
-        "Experience breaking down match VODs",
-        "Comfortable working remotely with the roster",
-      ],
-    },
+  requirements: [
+    "13+",
+    "Respectful",
+    "Mature",
+    "Skilled",
+    "Good positioning",
+    "Good passing",
+    "Strong game sense",
+    "Communication",
+    "Awareness",
+    "EU or NA",
   ],
   contact: "recruit@rpzcelestial.gg",
 };
