@@ -25,6 +25,7 @@ export type Match = {
   status: "upcoming" | "won" | "lost" | "draw";
   score?: string;
   games?: string[];
+  mvp?: string;
 };
 
 export type Partner = {
@@ -175,6 +176,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "won",
     score: "3-1",
+    games: ["3-4", "4-3", "4-3", "2-1"],
+    mvp: "Lewi",
   },
   {
     id: "m2",
@@ -184,6 +187,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "won",
     score: "3-1",
+    games: ["4-3", "2-3", "3-1", "4-2"],
+    mvp: "Lewi",
   },
   {
     id: "m3",
@@ -193,6 +198,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "lost",
     score: "1-3",
+    games: ["1-2", "3-4", "5-4", "2-3"],
+    mvp: "Toast",
   },
   {
     id: "m4",
@@ -202,6 +209,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "lost",
     score: "0-3",
+    games: ["4-5", "2-4", "3-4"],
+    mvp: "Lewi",
   },
   {
     id: "m5",
@@ -220,6 +229,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "won",
     score: "3-0",
+    games: ["7-1", "5-4", "5-3"],
+    mvp: "Toast",
   },
   {
     id: "m7",
@@ -229,6 +240,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "lost",
     score: "0-3",
+    games: ["2-4", "1-7", "4-5"],
+    mvp: "Lewi",
   },
   {
     id: "m8",
@@ -238,6 +251,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "lost",
     score: "0-3",
+    games: ["3-4", "0-4", "2-4"],
+    mvp: "Lewi",
   },
   {
     id: "m9",
@@ -247,6 +262,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "lost",
     score: "0-3",
+    games: ["0-6", "2-6", "1-7"],
+    mvp: "Lewi",
   },
   {
     id: "m10",
@@ -283,6 +300,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "lost",
     score: "0-3",
+    games: ["1-4", "3-4", "0-6"],
+    mvp: "triple.T",
   },
   {
     id: "m14",
@@ -292,6 +311,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "lost",
     score: "0-3",
+    games: ["1-4", "1-2", "5-7"],
+    mvp: "triple.T",
   },
   {
     id: "m15",
@@ -310,6 +331,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "lost",
     score: "2-3",
+    games: ["4-5", "3-2", "2-3", "4-1", "1-3"],
+    mvp: "Lewi",
   },
   {
     id: "m17",
@@ -319,6 +342,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "won",
     score: "3-2",
+    games: ["4-2", "2-4", "3-0", "2-4", "4-3"],
+    mvp: "RD23",
   },
   {
     id: "m18",
@@ -328,6 +353,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "lost",
     score: "1-3",
+    games: ["3-4", "0-6", "5-4", "2-5"],
+    mvp: "Lewi",
   },
   {
     id: "m19",
@@ -346,6 +373,8 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "lost",
     score: "0-3",
+    games: ["2-7", "3-5", "1-3"],
+    mvp: "Lewi",
   },
 ];
 
@@ -368,8 +397,6 @@ export const recruitment = {
 };
 
 export const socials = [
-  { name: "X / Twitter", url: "https://x.com/rpzcelestial", handle: "@rpzcelestial" },
-  { name: "Twitch", url: "https://twitch.tv/rpzcelestial", handle: "twitch.tv/rpzcelestial" },
-  { name: "YouTube", url: "https://youtube.com/@rpzcelestial", handle: "@rpzcelestial" },
   { name: "Discord", url: "https://discord.gg/9Y6KYU49uH", handle: "discord.gg/9Y6KYU49uH" },
+  { name: "YouTube", url: "https://www.youtube.com/@RPZCELESTIAL-EUNA", handle: "@RPZCELESTIAL-EUNA" },
 ];
