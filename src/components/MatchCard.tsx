@@ -138,6 +138,12 @@ export function MatchCard({ match, delay = 0 }: MatchCardProps) {
                   Per-game scorelines coming soon.
                 </p>
               )}
+              {match.mvp && (
+                <div className="mt-4 flex items-center gap-2 rounded-md border border-primary/30 bg-primary/10 px-3 py-2 text-sm">
+                  <span className="text-xs font-bold uppercase tracking-wider text-primary">MVP</span>
+                  <span className="font-display font-bold text-foreground">{match.mvp}</span>
+                </div>
+              )}
             </div>
           </motion.div>
         )}

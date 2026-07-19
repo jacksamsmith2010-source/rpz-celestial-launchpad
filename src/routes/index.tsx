@@ -97,7 +97,7 @@ function HomePage() {
           <SectionHeader
             eyebrow="The squad"
             title="Featured Roster"
-            subtitle="Five pilots. One orbit. Meet the core of RPZ CELESTIAL."
+            subtitle="Meet the core of RPZ CELESTIAL."
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {featuredPlayers.map((p, i) => (

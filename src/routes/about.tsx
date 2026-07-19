@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { SectionHeader } from "@/components/SectionHeader";
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { teamStats } from "@/lib/team-data";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -31,24 +30,26 @@ function AboutPage() {
       <SectionHeader
         eyebrow="Our origin"
         title="About RPZ CELESTIAL"
-        subtitle="An EU Orion Drift team partnered with Replitz Esports, now expanding into NA."
+        subtitle="A VR esports team competing across VRML and ODC in Orion Drift."
       />
 
       <div className="grid gap-12 lg:grid-cols-2">
         <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
           <p>
-            RPZ CELESTIAL was founded in {teamStats.founded} by JSL2010. What started as a small
-            crew grinding Orion Drift ranked has grown into a full org partnered with Replitz
-            Esports, competing across EU and now North America.
+            RPZ CELESTIAL is a VR esports team specializing in VRML (Virtual Reality Master League)
+            and ODC (Orion Drift Competitive) League competitions. Our team consists of talented
+            artists who are confident about pushing the boundaries of virtual reality gaming. With
+            our dedication and skill, we aim to become a known and skilled force in the world of
+            Orion Drift esports over the next few seasons!
           </p>
           <p>
-            We now field two rosters — a proven EU squad and a brand new NA squad — chasing
-            recognition and results in ODC and beyond. Every player is picked for skill, game
-            sense, and the mindset to grow with the org.
-          </p>
-          <p>
-            We don't just play in VR. We scrim, review VODs, and iterate like any serious esports
-            team — because Orion Drift deserves the same discipline as any other title.
+            Our team, also known as CELESTIAL, is composed of highly skilled players from both EU
+            and NA who are passionate about pushing the boundaries of VR gaming and competing at
+            the highest level. We strive for excellence and are dedicated to perfecting our craft
+            through constant practice and scrimming. We bring creativity and innovation to our
+            gameplay. With our unique blend of talent, determination and experience vs top teams
+            and players, we aim to make a mark in VRML and ODC and leave a lasting impact on the
+            competitive Orion Drift community.
           </p>
         </div>
 

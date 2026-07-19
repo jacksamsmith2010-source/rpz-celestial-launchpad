@@ -43,9 +43,6 @@ function RosterPage() {
           <div className="mb-6 flex items-center gap-3">
             <span className="text-2xl">🇪🇺</span>
             <h2 className="font-display text-2xl font-bold text-foreground">EU Roster</h2>
-            <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">
-              {eu.length} pilots
-            </span>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {eu.map((p, i) => (
@@ -58,9 +55,6 @@ function RosterPage() {
           <div className="mb-6 flex items-center gap-3">
             <span className="text-2xl">🇺🇸</span>
             <h2 className="font-display text-2xl font-bold text-foreground">NA Roster</h2>
-            <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">
-              {na.length} pilots
-            </span>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {na.map((p, i) => (
