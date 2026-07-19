@@ -78,23 +78,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RPZ CELESTIAL — VR Esports Team" },
+      { title: "RPZ CELESTIAL — ORION DRIFT Esports" },
       {
         name: "description",
         content:
-          "Official home of RPZ CELESTIAL, a competitive VR esports team competing in Orion Drift. Roster, schedule, stats, and recruitment.",
+          "Official home of RPZ CELESTIAL, a competitive VR esports org competing in Orion Drift. We offer rosters, schedules, stats, and recruitment.",
       },
       { name: "author", content: "RPZ CELESTIAL" },
-      { property: "og:title", content: "RPZ CELESTIAL — VR Esports Team" },
+      { property: "og:title", content: "RPZ CELESTIAL — ORION DRIFT Esports" },
       {
         property: "og:description",
         content:
-          "Official home of RPZ CELESTIAL, a competitive VR esports team competing in Orion Drift.",
+          "Official home of RPZ CELESTIAL, a competitive VR esports org competing in Orion Drift. We offer rosters, schedules, stats, and recruitment.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "RPZ CELESTIAL" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@rpzcelestial" },
+      { name: "twitter:title", content: "RPZ CELESTIAL — ORION DRIFT Esports" },
+      { name: "twitter:description", content: "Official home of RPZ CELESTIAL, a competitive VR esports org competing in Orion Drift. We offer rosters, schedules, stats, and recruitment." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/VhT9u84SQadiwTcoWgiduaK74fw2/social-images/social-1784421295437-Screenshot_20260602_005624_Discord.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/VhT9u84SQadiwTcoWgiduaK74fw2/social-images/social-1784421295437-Screenshot_20260602_005624_Discord.webp" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -111,7 +115,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,

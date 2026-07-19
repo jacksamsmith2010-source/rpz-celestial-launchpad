@@ -12,17 +12,17 @@ import { teamStats, roster, matches } from "@/lib/team-data";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "RPZ CELESTIAL — VR Esports Team" },
+      { title: "RPZ CELESTIAL — ORION DRIFT Esports" },
       {
         name: "description",
         content:
-          "Official home of RPZ CELESTIAL, a competitive VR esports team competing in Orion Drift. Roster, schedule, stats, and recruitment.",
+          "Official home of RPZ CELESTIAL, a competitive VR esports org competing in Orion Drift. We offer rosters, schedules, stats, and recruitment.",
       },
-      { property: "og:title", content: "RPZ CELESTIAL — VR Esports Team" },
+      { property: "og:title", content: "RPZ CELESTIAL — ORION DRIFT Esports" },
       {
         property: "og:description",
         content:
-          "Official home of RPZ CELESTIAL, a competitive VR esports team competing in Orion Drift.",
+          "Official home of RPZ CELESTIAL, a competitive VR esports org competing in Orion Drift. We offer rosters, schedules, stats, and recruitment.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
