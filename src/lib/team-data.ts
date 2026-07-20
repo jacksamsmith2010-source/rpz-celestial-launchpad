@@ -450,7 +450,7 @@ export const seasons: Season[] = [
       matchesPlayed: 11,
       winRate: 18,
       tournamentWins: 0,
-      currentRank: "—",
+      currentRank: "86th",
       wins: 2,
       losses: 9,
       goalsFor: 87,
