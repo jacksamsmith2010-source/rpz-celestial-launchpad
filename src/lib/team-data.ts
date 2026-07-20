@@ -28,6 +28,25 @@ export type Match = {
   mvp?: string;
 };
 
+export type SeasonStats = {
+  matchesPlayed: number;
+  winRate: number;
+  tournamentWins: number;
+  currentRank: string;
+  wins: number;
+  losses: number;
+  goalsFor: number;
+  goalsAgainst: number;
+};
+
+export type Season = {
+  id: string;
+  name: string;
+  region: "EU" | "NA";
+  stats: SeasonStats;
+  matches: Match[];
+};
+
 export type Partner = {
   id: string;
   name: string;
@@ -399,4 +418,60 @@ export const recruitment = {
 export const socials = [
   { name: "Discord", url: "https://discord.gg/9Y6KYU49uH", handle: "discord.gg/9Y6KYU49uH" },
   { name: "YouTube", url: "https://www.youtube.com/@RPZCELESTIAL-EUNA", handle: "@RPZCELESTIAL-EUNA" },
+];
+
+const vrmlS1EuMatches: Match[] = [
+  { id: "vrml1-1", date: "VRML S1", time: "Best Of 5", opponent: "Court Masters", tournament: "VRML SEASON 1", status: "lost", score: "2-3" },
+  { id: "vrml1-2", date: "VRML S1", time: "Best Of 5", opponent: "Curse", tournament: "VRML SEASON 1", status: "won", score: "3-0" },
+  { id: "vrml1-3", date: "VRML S1", time: "Best Of 5", opponent: "Falcon Esports", tournament: "VRML SEASON 1", status: "lost", score: "0-3" },
+  { id: "vrml1-4", date: "VRML S1", time: "Best Of 5", opponent: "Astro Bots", tournament: "VRML SEASON 1", status: "won", score: "3-0" },
+  { id: "vrml1-5", date: "VRML S1", time: "Best Of 5", opponent: "Poisn", tournament: "VRML SEASON 1", status: "lost", score: "0-3" },
+  { id: "vrml1-6", date: "VRML S1", time: "Best Of 5", opponent: "Astro Bots", tournament: "VRML SEASON 1", status: "lost", score: "0-3" },
+  { id: "vrml1-7", date: "VRML S1", time: "Best Of 5", opponent: "RCX Cadets", tournament: "VRML SEASON 1", status: "lost", score: "1-3" },
+  { id: "vrml1-8", date: "VRML S1", time: "Best Of 5", opponent: "Spectrum", tournament: "VRML SEASON 1", status: "lost", score: "0-3" },
+  { id: "vrml1-9", date: "VRML S1", time: "Best Of 5", opponent: "Quantum Crew", tournament: "VRML SEASON 1", status: "lost", score: "1-3" },
+  { id: "vrml1-10", date: "VRML S1", time: "Best Of 5", opponent: "RCX", tournament: "VRML SEASON 1", status: "lost", score: "2-3" },
+  { id: "vrml1-11", date: "VRML S1", time: "Best Of 5", opponent: "Continent", tournament: "VRML SEASON 1", status: "lost", score: "0-3" },
+];
+
+export const seasons: Season[] = [
+  {
+    id: "odc-s1-eu",
+    name: "ODC Season 1",
+    region: "EU",
+    stats: { ...teamStats },
+    matches,
+  },
+  {
+    id: "vrml-s1-eu",
+    name: "VRML Season 1",
+    region: "EU",
+    stats: {
+      matchesPlayed: 11,
+      winRate: 18,
+      tournamentWins: 0,
+      currentRank: "—",
+      wins: 2,
+      losses: 9,
+      goalsFor: 87,
+      goalsAgainst: 124,
+    },
+    matches: vrmlS1EuMatches,
+  },
+  {
+    id: "vrml-s2-na",
+    name: "VRML Season 2",
+    region: "NA",
+    stats: {
+      matchesPlayed: 0,
+      winRate: 0,
+      tournamentWins: 0,
+      currentRank: "—",
+      wins: 0,
+      losses: 0,
+      goalsFor: 0,
+      goalsAgainst: 0,
+    },
+    matches: [],
+  },
 ];
