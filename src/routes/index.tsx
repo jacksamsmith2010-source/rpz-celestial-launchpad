@@ -143,7 +143,7 @@ function HomePage() {
           <SectionHeader
             eyebrow="Who we are"
             title="RPZ CELESTIAL"
-            subtitle="An EU-based Orion Drift organization partnered with Replitz Esports, expanding into NA and building well-rounded players ready for the highest level."
+            subtitle="A growing EU and NA Orion Drift organization partnered with Replitz Esports, recently expanding into NA, we look to build a community up to make us a recognizable organisation in the vr comp scene, we are a upcoming top 25 team in Orion Drift, we are only just starting!"
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {pillars.map((p, i) => (
