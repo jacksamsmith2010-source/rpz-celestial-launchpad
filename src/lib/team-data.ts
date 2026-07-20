@@ -459,6 +459,22 @@ export const seasons: Season[] = [
     matches: vrmlS1EuMatches,
   },
   {
+    id: "vrml-s2-eu",
+    name: "VRML Season 2",
+    region: "EU",
+    stats: {
+      matchesPlayed: 0,
+      winRate: 0,
+      tournamentWins: 0,
+      currentRank: "—",
+      wins: 0,
+      losses: 0,
+      goalsFor: 0,
+      goalsAgainst: 0,
+    },
+    matches: [],
+  },
+  {
     id: "vrml-s2-na",
     name: "VRML Season 2",
     region: "NA",
