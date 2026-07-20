@@ -195,7 +195,7 @@ export const matches: Match[] = [
     tournament: "ODC SEASON 1",
     status: "won",
     score: "3-1",
-    games: ["3-4", "4-3", "4-3", "2-1"],
+    games: ["3-4", "3-2", "4-3", "2-1"],
     mvp: "Lewi",
   },
   {
