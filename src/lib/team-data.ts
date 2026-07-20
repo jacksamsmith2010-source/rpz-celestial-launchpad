@@ -28,6 +28,25 @@ export type Match = {
   mvp?: string;
 };
 
+export type SeasonStats = {
+  matchesPlayed: number;
+  winRate: number;
+  tournamentWins: number;
+  currentRank: string;
+  wins: number;
+  losses: number;
+  goalsFor: number;
+  goalsAgainst: number;
+};
+
+export type Season = {
+  id: string;
+  name: string;
+  region: "EU" | "NA";
+  stats: SeasonStats;
+  matches: Match[];
+};
+
 export type Partner = {
   id: string;
   name: string;
