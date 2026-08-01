@@ -179,6 +179,7 @@ export const matches: Match[] = [
     status: "won",
     score: "3-2",
     games: ["4-3", "2-3", "4-1", "1-3", "4-3"],
+    mvp: "Lewi",
   },
   {
     id: "m23",
@@ -189,6 +190,7 @@ export const matches: Match[] = [
     status: "lost",
     score: "2-3",
     games: ["3-5", "4-3", "7-3", "1-2", "3-6"],
+    mvp: "Toast",
   },
   {
     id: "m22",
@@ -199,6 +201,7 @@ export const matches: Match[] = [
     status: "lost",
     score: "0-3",
     games: ["1-7", "0-6", "3-6"],
+    mvp: "Lewi",
   },
   {
     id: "m21",
@@ -209,6 +212,7 @@ export const matches: Match[] = [
     status: "won",
     score: "3-1",
     games: ["5-3", "2-4", "4-3", "6-5"],
+    mvp: "Generous_VR",
   },
   {
     id: "m1",
