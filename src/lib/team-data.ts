@@ -118,7 +118,7 @@ export const roster: Player[] = [
     role: "3rd/2nd press",
     flag: "🇬🇧",
     joined: "Jul, 2026",
-    image: pibbleImg.url,
+    initials: "Lr",
     region: "EU",
   },
   {
