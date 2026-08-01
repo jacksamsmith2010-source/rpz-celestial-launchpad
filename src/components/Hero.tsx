@@ -2,7 +2,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
 import { ChevronRight, MessageCircle } from "lucide-react";
 
-import heroImage from "@/assets/hero-celestial.jpg";
+import heroAsset from "@/assets/celestial-hero.jpg.asset.json";
 
 export function Hero() {
   const reduced = useReducedMotion();
@@ -11,10 +11,8 @@ export function Hero() {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
       <div className="absolute inset-0">
         <img
-          src={heroImage}
+          src={heroAsset.url}
           alt="RPZ CELESTIAL VR arena"
-          width={1920}
-          height={1088}
           className="h-full w-full object-cover"
           loading="eager"
         />
