@@ -2,23 +2,14 @@ import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
 import { ChevronRight, MessageCircle } from "lucide-react";
 
-import heroAsset from "@/assets/celestial-hero.jpg.asset.json";
+import { NeonBackdrop } from "@/components/NeonBackdrop";
 
 export function Hero() {
   const reduced = useReducedMotion();
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
-      <div className="absolute inset-0">
-        <img
-          src={heroAsset.url}
-          alt="RPZ CELESTIAL VR arena"
-          className="h-full w-full object-cover"
-          loading="eager"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/40 via-transparent to-background/40" />
-      </div>
+      <NeonBackdrop />
 
       <div className="container-tight relative z-10 flex flex-col items-center text-center">
         <motion.span
