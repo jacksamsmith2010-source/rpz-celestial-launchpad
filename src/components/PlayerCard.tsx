@@ -7,7 +7,7 @@ interface PlayerCardProps {
 }
 
 export function PlayerCard({ player, delay = 0 }: PlayerCardProps) {
-  const initials = player.handle.slice(0, 2).toUpperCase();
+  const initials = player.initials || player.handle.slice(0, 2).toUpperCase();
 
   return (
     <motion.div
