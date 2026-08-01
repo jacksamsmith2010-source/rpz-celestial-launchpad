@@ -13,6 +13,7 @@ export type Player = {
   flag: string;
   joined: string;
   image?: string;
+  initials?: string;
   region: "EU" | "NA";
 };
 
