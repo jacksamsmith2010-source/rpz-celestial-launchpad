@@ -136,6 +136,32 @@
   backdrop-filter: blur(12px);
 }
 
+@utility neon-line-h {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-indigo-light),
+    var(--color-violet),
+    transparent
+  );
+  box-shadow: 0 0 12px var(--color-glow), 0 0 32px var(--color-glow);
+  border-radius: 999px;
+}
+
+@utility neon-line-v {
+  background: linear-gradient(180deg, transparent, var(--color-violet), transparent);
+  box-shadow: 0 0 10px var(--color-glow), 0 0 28px var(--color-glow);
+  border-radius: 999px;
+}
+
+@utility neon-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--color-violet) 12%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--color-violet) 12%, transparent) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(circle at 50% 40%, black, transparent 75%);
+}
+
 @utility container-tight {
   width: 100%;
   max-width: 1280px;
