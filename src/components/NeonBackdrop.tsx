@@ -45,7 +45,7 @@ export function NeonBackdrop() {
       className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-background"
       aria-hidden="true"
     >
-      <div className="neon-grid absolute inset-0 opacity-30" />
+      <div className="neon-grid absolute inset-0 opacity-50" />
 
       {horizontalLines.map((line, i) => (
         <motion.div
@@ -55,8 +55,8 @@ export function NeonBackdrop() {
           initial={{ x: "-80%", opacity: 0 }}
           animate={
             reduced
-              ? { opacity: 0.4 }
-              : { x: ["-80%", "220%"], opacity: [0, 0.8, 0.8, 0] }
+              ? { opacity: 0.5 }
+              : { x: ["-80%", "220%"], opacity: [0, 1, 1, 0] }
           }
           transition={{
             duration: line.duration,
