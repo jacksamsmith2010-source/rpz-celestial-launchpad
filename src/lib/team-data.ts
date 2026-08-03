@@ -14,6 +14,7 @@ export type Player = {
   joined: string;
   image?: string;
   initials?: string;
+  title?: "Captain" | "Co-Captain";
   region: "EU" | "NA";
 };
 
@@ -51,9 +52,41 @@ export type Season = {
 export type Partner = {
   id: string;
   name: string;
-  tier: "platinum" | "gold" | "silver";
+  owner: string;
+  tier: "Diamond Partner" | "Gold Partner";
+  glow: "red" | "lavender";
   description: string;
 };
+
+export const partners: Partner[] = [
+  {
+    id: "rpz",
+    name: "RPZ Esports",
+    owner: "Sorson",
+    tier: "Diamond Partner",
+    glow: "red",
+    description:
+      "A growing global organization across EU and NA, helping RPZ CELESTIAL push for recognition and strength in the competitive VR scene.",
+  },
+  {
+    id: "val",
+    name: "VAL Esport",
+    owner: "gregorymcboy",
+    tier: "Gold Partner",
+    glow: "red",
+    description:
+      "A competitive VR organization supporting CELESTIAL with scrims, exposure, and community growth.",
+  },
+  {
+    id: "sxg",
+    name: "SXG WYVERNS",
+    owner: "SXG_GERNO",
+    tier: "Gold Partner",
+    glow: "lavender",
+    description:
+      "A rising Orion Drift org partnered with CELESTIAL for practice, events, and shared community.",
+  },
+];
 
 export const teamStats = {
   founded: "2025",
