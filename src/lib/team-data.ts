@@ -14,6 +14,7 @@ export type Player = {
   joined: string;
   image?: string;
   initials?: string;
+  title?: "Captain" | "Co-Captain";
   region: "EU" | "NA";
 };
 
@@ -51,9 +52,41 @@ export type Season = {
 export type Partner = {
   id: string;
   name: string;
-  tier: "platinum" | "gold" | "silver";
+  owner: string;
+  tier: "Diamond Partner" | "Gold Partner";
+  glow: "red" | "lavender";
   description: string;
 };
+
+export const partners: Partner[] = [
+  {
+    id: "rpz",
+    name: "RPZ Esports",
+    owner: "Sorson",
+    tier: "Diamond Partner",
+    glow: "red",
+    description:
+      "A growing global organization across EU and NA, helping RPZ CELESTIAL push for recognition and strength in the competitive VR scene.",
+  },
+  {
+    id: "val",
+    name: "VAL Esport",
+    owner: "gregorymcboy",
+    tier: "Gold Partner",
+    glow: "red",
+    description:
+      "A competitive VR organization supporting CELESTIAL with scrims, exposure, and community growth.",
+  },
+  {
+    id: "sxg",
+    name: "SXG WYVERNS",
+    owner: "SXG_GERNO",
+    tier: "Gold Partner",
+    glow: "lavender",
+    description:
+      "A rising Orion Drift org partnered with CELESTIAL for practice, events, and shared community.",
+  },
+];
 
 export const teamStats = {
   founded: "2025",
@@ -75,6 +108,7 @@ export const roster: Player[] = [
     id: "p1",
     handle: "JSL2010",
     name: "JSL.the.orange.J20",
+    title: "Captain",
     role: "4th/3rd press",
     flag: "🇬🇧",
     joined: "Aug, 2025",
@@ -84,7 +118,8 @@ export const roster: Player[] = [
   {
     id: "p2",
     handle: "Lewi",
-    name: "Lewi1738",
+    name: "bussed",
+    title: "Co-Captain",
     role: "1st/2nd press",
     flag: "🇬🇧",
     joined: "Sept, 2025",
@@ -135,6 +170,7 @@ export const roster: Player[] = [
     id: "p7",
     handle: "TheSmallWhiteShark",
     name: "Hope.409709",
+    title: "Captain",
     role: "2nd/3rd press",
     flag: "🇺🇸",
     joined: "Jul, 2026",
@@ -144,6 +180,7 @@ export const roster: Player[] = [
     id: "p8",
     handle: "Bob34!!",
     name: "Bob34",
+    title: "Co-Captain",
     role: "4th/3rd press",
     flag: "🇺🇸",
     joined: "Jul, 2026",
