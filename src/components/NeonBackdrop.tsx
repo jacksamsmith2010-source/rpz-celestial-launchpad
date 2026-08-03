@@ -42,7 +42,7 @@ export function NeonBackdrop() {
 
   return (
     <div
-      className="pointer-events-none fixed inset-0 overflow-hidden bg-background"
+      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-background"
       aria-hidden="true"
     >
       <div className="neon-grid absolute inset-0 opacity-30" />
