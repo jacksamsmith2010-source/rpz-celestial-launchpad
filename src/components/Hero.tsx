@@ -2,15 +2,11 @@ import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
 import { ChevronRight, MessageCircle } from "lucide-react";
 
-import { NeonBackdrop } from "@/components/NeonBackdrop";
-
 export function Hero() {
   const reduced = useReducedMotion();
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
-      <NeonBackdrop />
-
       <div className="container-tight relative z-10 flex flex-col items-center text-center">
         <motion.span
           initial={reduced ? { opacity: 1 } : { opacity: 0, y: 12 }}
