@@ -12,6 +12,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import { NeonBackdrop } from "../components/NeonBackdrop";
 
 function NotFoundComponent() {
   return (
@@ -142,9 +143,10 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="flex min-h-screen flex-col bg-background">
+      <div className="relative flex min-h-screen flex-col">
+        <NeonBackdrop />
         <Header />
-        <main className="flex-1">
+        <main className="relative flex-1">
           <Outlet />
         </main>
         <Footer />

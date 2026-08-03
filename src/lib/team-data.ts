@@ -94,7 +94,7 @@ export const teamStats = {
   matchesPlayed: 24,
   winRate: 50,
   tournamentWins: 0,
-  currentRank: "64th",
+  currentRank: "63rd",
   wins: 12,
   losses: 12,
   goalsFor: 295,
