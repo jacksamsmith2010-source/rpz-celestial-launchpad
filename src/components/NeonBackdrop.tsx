@@ -75,8 +75,8 @@ export function NeonBackdrop() {
           initial={{ y: "-80%", opacity: 0 }}
           animate={
             reduced
-              ? { opacity: 0.3 }
-              : { y: ["-80%", "320%"], opacity: [0, 0.7, 0.7, 0] }
+              ? { opacity: 0.4 }
+              : { y: ["-80%", "320%"], opacity: [0, 0.9, 0.9, 0] }
           }
           transition={{
             duration: line.duration,
@@ -142,8 +142,8 @@ export function NeonBackdrop() {
         />
       ))}
 
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,transparent_0%,var(--color-background)_75%)]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,transparent_0%,var(--color-background)_60%)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background" />
     </div>
   );
 }
