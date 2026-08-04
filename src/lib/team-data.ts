@@ -151,7 +151,7 @@ export const roster: Player[] = [
     handle: "Lunr",
     name: "Lunr",
     role: "3rd/2nd press",
-    flag: "🇬🇧",
+    flag: "",
     joined: "Jul, 2026",
     initials: "Lr",
     region: "EU",
