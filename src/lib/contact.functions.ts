@@ -12,7 +12,7 @@ const contactSchema = z.object({
 export type ContactInput = z.infer<typeof contactSchema>;
 
 export const sendContactMessage = createServerFn({ method: "POST" })
-  .inputValidator((data) => contactSchema.parse(data))
+  .validator((data) => contactSchema.parse(data))
   .handler(async ({ data }) => {
     const apiKey = process.env["LOVABLE_API_KEY"];
     const toEmail = process.env["CONTACT_TO_EMAIL"] || "recruit@rpzcelestial.gg";
