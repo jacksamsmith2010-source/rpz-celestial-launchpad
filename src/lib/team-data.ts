@@ -54,7 +54,7 @@ export type Partner = {
   name: string;
   owner: string;
   tier: "Diamond Partner" | "Gold Partner";
-  glow: "red" | "lavender";
+  glow: "blue" | "gold";
   description: string;
 };
 
@@ -64,7 +64,7 @@ export const partners: Partner[] = [
     name: "RPZ Esports",
     owner: "Sorson",
     tier: "Diamond Partner",
-    glow: "red",
+    glow: "blue",
     description:
       "A growing global organization across EU and NA, helping RPZ CELESTIAL push for recognition and strength in the competitive VR scene.",
   },
@@ -73,18 +73,18 @@ export const partners: Partner[] = [
     name: "VAL Esport",
     owner: "gregorymcboy",
     tier: "Gold Partner",
-    glow: "red",
+    glow: "gold",
     description:
-      "A competitive VR organization supporting CELESTIAL with scrims, exposure, and community growth.",
+      "A org helping out RPZ CELESTIAL to become more global and recognised of supporting other orgs",
   },
   {
     id: "sxg",
     name: "SXG WYVERNS",
     owner: "SXG_GERNO",
     tier: "Gold Partner",
-    glow: "lavender",
+    glow: "gold",
     description:
-      "A rising Orion Drift org partnered with CELESTIAL for practice, events, and shared community.",
+      "A org helping out RPZ CELESTIAL to become more global and recognised of supporting other orgs",
   },
 ];
 

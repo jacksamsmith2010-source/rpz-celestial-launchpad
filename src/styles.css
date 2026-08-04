@@ -142,16 +142,16 @@
   animation: neon-pulse 3.2s ease-in-out infinite;
 }
 
-@utility glow-red {
-  box-shadow: 0 0 0 1px oklch(0.45 0.19 25 / 55%), 0 0 34px -8px oklch(0.45 0.2 25 / 70%),
-    inset 0 0 40px -26px oklch(0.5 0.2 25);
-  border-color: oklch(0.45 0.19 25 / 60%);
+@utility glow-blue {
+  box-shadow: 0 0 0 1px oklch(0.68 0.16 235 / 60%), 0 0 34px -8px oklch(0.7 0.18 235 / 80%),
+    inset 0 0 40px -26px oklch(0.72 0.17 235);
+  border-color: oklch(0.68 0.16 235 / 65%);
 }
 
-@utility glow-lavender {
-  box-shadow: 0 0 0 1px oklch(0.75 0.14 305 / 50%), 0 0 34px -8px oklch(0.7 0.18 305 / 75%),
-    inset 0 0 40px -26px oklch(0.75 0.14 305);
-  border-color: oklch(0.75 0.14 305 / 55%);
+@utility glow-gold {
+  box-shadow: 0 0 0 1px oklch(0.82 0.15 88 / 60%), 0 0 34px -8px oklch(0.8 0.16 88 / 80%),
+    inset 0 0 40px -26px oklch(0.82 0.15 88);
+  border-color: oklch(0.82 0.15 88 / 65%);
 }
 
 @keyframes neon-pulse {
