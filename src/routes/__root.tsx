@@ -13,7 +13,6 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { NeonBackdrop } from "../components/NeonBackdrop";
-import { Toaster } from "../components/ui/sonner";
 
 function NotFoundComponent() {
   return (
@@ -151,7 +150,6 @@ function RootComponent() {
           <Outlet />
         </main>
         <Footer />
-        <Toaster position="bottom-right" />
       </div>
     </QueryClientProvider>
   );
