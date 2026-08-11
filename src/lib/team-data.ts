@@ -193,15 +193,6 @@ export const roster: Player[] = [
     joined: "Jul, 2026",
     region: "NA",
   },
-  {
-    id: "p12",
-    handle: "poptart",
-    name: "poptart",
-    role: "3rd press",
-    flag: "🇺🇸",
-    joined: "Jul, 2026",
-    region: "NA",
-  },
 ];
 
 export const matches: Match[] = [
