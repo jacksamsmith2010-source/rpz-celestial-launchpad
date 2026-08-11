@@ -53,8 +53,8 @@ export type Partner = {
   id: string;
   name: string;
   owner: string;
-  tier: "Diamond Partner" | "Gold Partner";
-  glow: "blue" | "gold";
+  tier: "Diamond Partner" | "Bronze Partner";
+  glow: "blue" | "bronze";
   description: string;
 };
 
@@ -72,8 +72,8 @@ export const partners: Partner[] = [
     id: "val",
     name: "VAL Esport",
     owner: "gregorymcboy",
-    tier: "Gold Partner",
-    glow: "gold",
+    tier: "Bronze Partner",
+    glow: "bronze",
     description:
       "A org helping out RPZ CELESTIAL to become more global and recognised of supporting other orgs",
   },
@@ -81,8 +81,8 @@ export const partners: Partner[] = [
     id: "sxg",
     name: "SXG WYVERNS",
     owner: "SXG_GERNO",
-    tier: "Gold Partner",
-    glow: "gold",
+    tier: "Bronze Partner",
+    glow: "bronze",
     description:
       "A org helping out RPZ CELESTIAL to become more global and recognised of supporting other orgs",
   },

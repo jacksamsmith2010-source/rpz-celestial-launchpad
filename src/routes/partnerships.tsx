@@ -32,7 +32,8 @@ export const Route = createFileRoute("/partnerships")({
 
 function PartnerCard({ partner, delay }: { partner: Partner; delay: number }) {
   const [open, setOpen] = useState(false);
-  const glow = partner.glow === "blue" ? "glow-blue" : "glow-gold";
+  const glow =
+    partner.glow === "blue" ? "glow-blue" : partner.glow === "bronze" ? "glow-bronze" : "glow-gold";
 
   return (
     <motion.div
