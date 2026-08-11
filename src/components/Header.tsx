@@ -22,7 +22,7 @@ export function Header() {
   });
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-violet/25 glass shadow-[0_1px_24px_-12px_var(--color-glow)]">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-violet/20 glass shadow-[0_1px_16px_-14px_var(--color-glow)]">
       <div className="container-tight flex h-16 items-center justify-between">
         <Link to="/" className="group flex items-center gap-2">
           <img
@@ -30,7 +30,7 @@ export function Header() {
             alt="RPZ CELESTIAL logo"
             width={36}
             height={36}
-            className="rounded-md shadow-[0_0_18px_-4px_var(--color-glow)] transition-transform group-hover:scale-105"
+            className="rounded-md shadow-[0_0_12px_-6px_var(--color-glow)] transition-transform group-hover:scale-105"
           />
           <span className="font-display text-lg font-bold tracking-tight text-foreground">
             RPZ <span className="text-gradient">CELESTIAL</span>
