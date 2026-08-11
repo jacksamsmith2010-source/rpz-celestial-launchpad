@@ -30,13 +30,13 @@ export function PlayerCard({ player, delay = 0 }: PlayerCardProps) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
       whileHover={{ y: -6 }}
-      className="group relative overflow-hidden rounded-2xl neon-border neon-pulse bg-card transition-shadow hover:glow"
+      className="group relative overflow-hidden rounded-2xl neon-border bg-card transition-shadow hover:glow"
     >
-      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo to-violet opacity-60 transition-opacity group-hover:opacity-100" />
+      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo to-violet opacity-50 transition-opacity group-hover:opacity-90" />
       <div className="p-6">
         <div className="flex items-start justify-between">
           {player.image ? (
-            <div className="h-14 w-14 overflow-hidden rounded-xl border border-violet/40 bg-gradient-to-br from-secondary to-accent shadow-[0_0_18px_-6px_var(--color-glow)]">
+            <div className="h-14 w-14 overflow-hidden rounded-xl border border-violet/30 bg-gradient-to-br from-secondary to-accent shadow-[0_0_12px_-8px_var(--color-glow)]">
               <img
                 src={player.image}
                 alt={player.handle}
@@ -45,7 +45,7 @@ export function PlayerCard({ player, delay = 0 }: PlayerCardProps) {
               />
             </div>
           ) : (
-            <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-violet/40 bg-gradient-to-br from-secondary to-accent font-display text-xl font-bold text-foreground shadow-[0_0_18px_-6px_var(--color-glow)]">
+            <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-violet/30 bg-gradient-to-br from-secondary to-accent font-display text-xl font-bold text-foreground shadow-[0_0_12px_-8px_var(--color-glow)]">
               {initials}
             </div>
           )}
@@ -76,7 +76,7 @@ export function PlayerCard({ player, delay = 0 }: PlayerCardProps) {
         </p>
 
         {mvps > 0 && (
-          <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-primary shadow-[0_0_20px_-8px_var(--color-glow)]">
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-primary shadow-[0_0_14px_-10px_var(--color-glow)]">
             <Star size={13} />
             {mvps} MVP{mvps === 1 ? "" : "s"}
           </div>
