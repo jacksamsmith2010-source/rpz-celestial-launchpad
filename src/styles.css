@@ -66,7 +66,7 @@
   --indigo: oklch(0.5 0.24 300);
   --indigo-light: oklch(0.66 0.21 305);
   --violet: oklch(0.8 0.14 310);
-  --glow: oklch(0.62 0.25 303 / 45%);
+  --glow: oklch(0.62 0.22 303 / 28%);
 }
 
 .dark {
@@ -124,18 +124,18 @@
 }
 
 @utility glow {
-  box-shadow: 0 0 40px -10px var(--color-glow);
+  box-shadow: 0 0 28px -12px var(--color-glow);
 }
 
 @utility glow-text {
-  text-shadow: 0 0 24px var(--color-glow);
+  text-shadow: 0 0 14px var(--color-glow);
 }
 
 @utility neon-border {
-  border: 1px solid color-mix(in oklab, var(--color-violet) 40%, transparent);
-  box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-indigo-light) 20%, transparent),
-    0 0 18px -6px var(--color-glow),
-    inset 0 0 24px -18px var(--color-violet);
+  border: 1px solid color-mix(in oklab, var(--color-violet) 32%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-indigo-light) 14%, transparent),
+    0 0 12px -8px var(--color-glow),
+    inset 0 0 18px -14px var(--color-violet);
 }
 
 @utility neon-pulse {
@@ -143,26 +143,26 @@
 }
 
 @utility glow-blue {
-  box-shadow: 0 0 0 1px oklch(0.68 0.16 235 / 60%), 0 0 34px -8px oklch(0.7 0.18 235 / 80%),
-    inset 0 0 40px -26px oklch(0.72 0.17 235);
-  border-color: oklch(0.68 0.16 235 / 65%);
+  box-shadow: 0 0 0 1px oklch(0.68 0.16 235 / 45%), 0 0 22px -12px oklch(0.7 0.18 235 / 55%),
+    inset 0 0 28px -20px oklch(0.72 0.17 235);
+  border-color: oklch(0.68 0.16 235 / 50%);
 }
 
 @utility glow-gold {
-  box-shadow: 0 0 0 1px oklch(0.82 0.15 88 / 60%), 0 0 34px -8px oklch(0.8 0.16 88 / 80%),
-    inset 0 0 40px -26px oklch(0.82 0.15 88);
-  border-color: oklch(0.82 0.15 88 / 65%);
+  box-shadow: 0 0 0 1px oklch(0.82 0.15 88 / 45%), 0 0 22px -12px oklch(0.8 0.16 88 / 55%),
+    inset 0 0 28px -20px oklch(0.82 0.15 88);
+  border-color: oklch(0.82 0.15 88 / 50%);
 }
 
 @keyframes neon-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-indigo-light) 18%, transparent),
-      0 0 14px -8px var(--color-glow);
+    box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-indigo-light) 12%, transparent),
+      0 0 10px -10px var(--color-glow);
   }
   50% {
-    box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-violet) 45%, transparent),
-      0 0 32px -6px var(--color-glow);
+    box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-violet) 28%, transparent),
+      0 0 20px -8px var(--color-glow);
   }
 }
 
@@ -179,21 +179,21 @@
     var(--color-violet),
     transparent
   );
-  box-shadow: 0 0 12px var(--color-glow), 0 0 32px var(--color-glow);
+  box-shadow: 0 0 8px var(--color-glow), 0 0 18px var(--color-glow);
   border-radius: 999px;
 }
 
 @utility neon-line-v {
   background: linear-gradient(180deg, transparent, var(--color-violet), transparent);
-  box-shadow: 0 0 10px var(--color-glow), 0 0 28px var(--color-glow);
+  box-shadow: 0 0 6px var(--color-glow), 0 0 16px var(--color-glow);
   border-radius: 999px;
 }
 
 @utility neon-grid {
   background-image:
-    linear-gradient(to right, color-mix(in oklab, var(--color-violet) 12%, transparent) 1px, transparent 1px),
-    linear-gradient(to bottom, color-mix(in oklab, var(--color-violet) 12%, transparent) 1px, transparent 1px);
-  background-size: 64px 64px;
+    linear-gradient(to right, color-mix(in oklab, var(--color-violet) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--color-violet) 7%, transparent) 1px, transparent 1px);
+  background-size: 80px 80px;
   mask-image: radial-gradient(circle at 50% 40%, black, transparent 75%);
 }
 
