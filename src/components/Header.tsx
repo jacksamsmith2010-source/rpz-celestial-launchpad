@@ -27,13 +27,13 @@ export function Header() {
         <Link to="/" className="group flex items-center gap-2">
           <img
             src={logoAsset.url}
-            alt="RPZ CELESTIAL logo"
+            alt="CELESTIAL logo"
             width={36}
             height={36}
             className="rounded-md shadow-[0_0_12px_-6px_var(--color-glow)] transition-transform group-hover:scale-105"
           />
           <span className="font-display text-lg font-bold tracking-tight text-foreground">
-            RPZ <span className="text-gradient">CELESTIAL</span>
+            <span className="text-gradient">CELESTIAL</span>
           </span>
         </Link>
 

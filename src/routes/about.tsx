@@ -6,15 +6,15 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — RPZ CELESTIAL" },
+      { title: "About — CELESTIAL" },
       {
         name: "description",
-        content: "Learn about RPZ CELESTIAL: our story, values, and mission in VR esports.",
+        content: "Learn about CELESTIAL: our story, values, and mission in VR esports.",
       },
-      { property: "og:title", content: "About — RPZ CELESTIAL" },
+      { property: "og:title", content: "About — CELESTIAL" },
       {
         property: "og:description",
-        content: "Learn about RPZ CELESTIAL: our story, values, and mission in VR esports.",
+        content: "Learn about CELESTIAL: our story, values, and mission in VR esports.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/about" },
@@ -29,14 +29,14 @@ function AboutPage() {
     <AnimatedSection className="container-tight pb-20 pt-32 md:pb-28">
       <SectionHeader
         eyebrow="Our origin"
-        title="About RPZ CELESTIAL"
+        title="About CELESTIAL"
         subtitle="A VR esports team competing across VRML and ODC in Orion Drift."
       />
 
       <div className="grid gap-12 lg:grid-cols-2">
         <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
           <p>
-            RPZ CELESTIAL is a VR esports team specializing in VRML (Virtual Reality Master League)
+            CELESTIAL is a VR esports team specializing in VRML (Virtual Reality Master League)
             and ODC (Orion Drift Competitive) League competitions. Our team consists of talented
             artists who are confident about pushing the boundaries of virtual reality gaming. With
             our dedication and skill, we aim to become a known and skilled force in the world of

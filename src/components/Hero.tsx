@@ -23,7 +23,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="font-display text-5xl font-bold text-foreground md:text-7xl"
         >
-          RPZ CELESTIAL
+          CELESTIAL
         </motion.h1>
 
         <motion.div

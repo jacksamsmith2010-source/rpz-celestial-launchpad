@@ -8,15 +8,15 @@ import { roster } from "@/lib/team-data";
 export const Route = createFileRoute("/roster")({
   head: () => ({
     meta: [
-      { title: "Roster — RPZ CELESTIAL" },
+      { title: "Roster — CELESTIAL" },
       {
         name: "description",
-        content: "Meet the RPZ CELESTIAL Orion Drift roster: pilots, supports, and staff.",
+        content: "Meet the CELESTIAL Orion Drift roster: pilots, supports, and staff.",
       },
-      { property: "og:title", content: "Roster — RPZ CELESTIAL" },
+      { property: "og:title", content: "Roster — CELESTIAL" },
       {
         property: "og:description",
-        content: "Meet the RPZ CELESTIAL Orion Drift roster: pilots, supports, and staff.",
+        content: "Meet the CELESTIAL Orion Drift roster: pilots, supports, and staff.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/roster" },

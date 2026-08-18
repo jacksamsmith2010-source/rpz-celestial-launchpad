@@ -9,15 +9,15 @@ import { seasons } from "@/lib/team-data";
 export const Route = createFileRoute("/stats")({
   head: () => ({
     meta: [
-      { title: "Stats — RPZ CELESTIAL" },
+      { title: "Stats — CELESTIAL" },
       {
         name: "description",
-        content: "Overall team stats for RPZ CELESTIAL.",
+        content: "Overall team stats for CELESTIAL.",
       },
-      { property: "og:title", content: "Stats — RPZ CELESTIAL" },
+      { property: "og:title", content: "Stats — CELESTIAL" },
       {
         property: "og:description",
-        content: "Overall team stats for RPZ CELESTIAL.",
+        content: "Overall team stats for CELESTIAL.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/stats" },

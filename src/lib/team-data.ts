@@ -60,22 +60,13 @@ export type Partner = {
 
 export const partners: Partner[] = [
   {
-    id: "rpz",
-    name: "RPZ Esports",
-    owner: "Sorson",
-    tier: "Diamond Partner",
-    glow: "blue",
-    description:
-      "A growing global organization across EU and NA, helping RPZ CELESTIAL push for recognition and strength in the competitive VR scene.",
-  },
-  {
     id: "val",
     name: "VAL Esport",
     owner: "gregorymcboy",
     tier: "Bronze Partner",
     glow: "bronze",
     description:
-      "A org helping out RPZ CELESTIAL to become more global and recognised of supporting other orgs",
+      "A org helping out CELESTIAL to become more global and recognised of supporting other orgs",
   },
   {
     id: "sxg",
@@ -84,7 +75,7 @@ export const partners: Partner[] = [
     tier: "Bronze Partner",
     glow: "bronze",
     description:
-      "A org helping out RPZ CELESTIAL to become more global and recognised of supporting other orgs",
+      "A org helping out CELESTIAL to become more global and recognised of supporting other orgs",
   },
 ];
 
@@ -144,24 +135,6 @@ export const roster: Player[] = [
     flag: "🇬🇧",
     joined: "Jul, 2026",
     image: rd23Img.url,
-    region: "EU",
-  },
-  {
-    id: "p5",
-    handle: "so",
-    name: "sorson",
-    role: "2nd/3rd press",
-    flag: "",
-    joined: "Aug, 2026",
-    region: "EU",
-  },
-  {
-    id: "p6",
-    handle: "Li",
-    name: "Li_.Ming",
-    role: "1st/2nd press",
-    flag: "",
-    joined: "Aug, 2026",
     region: "EU",
   },
   {
@@ -452,7 +425,7 @@ export const matches: Match[] = [
 
 export const recruitment = {
   title: "RECRUITMENT",
-  body: "RPZ CELESTIAL is a organization based in EU that is partnered and working with Replitz Esports to become superior and to grow in the competitive VR space in the game Orion Drift, with a EU and now new NA roster, we look for well rounded players both from EU and NA!",
+  body: "CELESTIAL is a organization based in EU looking to become superior and to grow in the competitive VR space in the game Orion Drift, with a EU and now new NA roster, we look for well rounded players both from EU and NA!",
   requirements: [
     "13+",
     "Respectful",
@@ -465,12 +438,12 @@ export const recruitment = {
     "Awareness",
     "EU or NA",
   ],
-  contact: "recruit@rpzcelestial.gg",
+  contact: "recruit@celestial.gg",
 };
 
 export const socials = [
   { name: "Discord", url: "https://discord.gg/9Y6KYU49uH", handle: "discord.gg/9Y6KYU49uH" },
-  { name: "YouTube", url: "https://www.youtube.com/@RPZCELESTIAL-EUNA", handle: "@RPZCELESTIAL-EUNA" },
+  { name: "YouTube", url: "https://www.youtube.com/@RPZCELESTIAL-EUNA", handle: "YouTube Channel" },
 ];
 
 const vrmlS1EuMatches: Match[] = [

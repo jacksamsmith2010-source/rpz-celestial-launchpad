@@ -46,7 +46,7 @@ export function MatchCard({ match, delay = 0 }: MatchCardProps) {
             </span>
           </div>
           <h3 className="mt-2 font-display text-xl font-bold text-foreground">
-            RPZ CELESTIAL <span className="text-muted-foreground">vs</span> {match.opponent}
+            CELESTIAL <span className="text-muted-foreground">vs</span> {match.opponent}
           </h3>
           <div className="mt-1 flex items-center gap-2 text-sm text-muted-foreground">
             <Trophy size={14} />
