@@ -8,12 +8,12 @@ import { recruitment } from "@/lib/team-data";
 export const Route = createFileRoute("/recruitment")({
   head: () => ({
     meta: [
-      { title: "Recruitment — RPZ CELESTIAL" },
+      { title: "Recruitment — CELESTIAL" },
       {
         name: "description",
         content: recruitment.body,
       },
-      { property: "og:title", content: "Recruitment — RPZ CELESTIAL" },
+      { property: "og:title", content: "Recruitment — CELESTIAL" },
       {
         property: "og:description",
         content: recruitment.body,
@@ -134,7 +134,7 @@ function RecruitmentPage() {
           <Mail size={24} />
         </div>
         <h3 className="mt-5 font-display text-2xl font-bold text-foreground">
-          Do you have what it takes to be a part of <span className="text-gradient">RPZ CELESTIAL</span>?
+          Do you have what it takes to be a part of <span className="text-gradient">CELESTIAL</span>?
         </h3>
         <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
           Send us your competitive profile, availability, and a short introduction — or hop into

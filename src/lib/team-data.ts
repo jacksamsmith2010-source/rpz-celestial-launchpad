@@ -66,7 +66,7 @@ export const partners: Partner[] = [
     tier: "Diamond Partner",
     glow: "blue",
     description:
-      "A growing global organization across EU and NA, helping RPZ CELESTIAL push for recognition and strength in the competitive VR scene.",
+      "A growing global organization across EU and NA, helping CELESTIAL push for recognition and strength in the competitive VR scene.",
   },
   {
     id: "val",
@@ -75,7 +75,7 @@ export const partners: Partner[] = [
     tier: "Bronze Partner",
     glow: "bronze",
     description:
-      "A org helping out RPZ CELESTIAL to become more global and recognised of supporting other orgs",
+      "A org helping out CELESTIAL to become more global and recognised of supporting other orgs",
   },
   {
     id: "sxg",
@@ -84,7 +84,7 @@ export const partners: Partner[] = [
     tier: "Bronze Partner",
     glow: "bronze",
     description:
-      "A org helping out RPZ CELESTIAL to become more global and recognised of supporting other orgs",
+      "A org helping out CELESTIAL to become more global and recognised of supporting other orgs",
   },
 ];
 
@@ -452,7 +452,7 @@ export const matches: Match[] = [
 
 export const recruitment = {
   title: "RECRUITMENT",
-  body: "RPZ CELESTIAL is a organization based in EU that is partnered and working with Replitz Esports to become superior and to grow in the competitive VR space in the game Orion Drift, with a EU and now new NA roster, we look for well rounded players both from EU and NA!",
+  body: "CELESTIAL is a organization based in EU that is partnered and working with Replitz Esports to become superior and to grow in the competitive VR space in the game Orion Drift, with a EU and now new NA roster, we look for well rounded players both from EU and NA!",
   requirements: [
     "13+",
     "Respectful",

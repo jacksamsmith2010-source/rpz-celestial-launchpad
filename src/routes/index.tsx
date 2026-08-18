@@ -12,17 +12,17 @@ import { teamStats, roster, matches } from "@/lib/team-data";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "RPZ CELESTIAL — ORION DRIFT Esports" },
+      { title: "CELESTIAL — ORION DRIFT Esports" },
       {
         name: "description",
         content:
-          "Official home of RPZ CELESTIAL, a competitive VR esports org competing in Orion Drift. We offer rosters, schedules, stats, and recruitment.",
+          "Official home of CELESTIAL, a competitive VR esports org competing in Orion Drift. We offer rosters, schedules, stats, and recruitment.",
       },
-      { property: "og:title", content: "RPZ CELESTIAL — ORION DRIFT Esports" },
+      { property: "og:title", content: "CELESTIAL — ORION DRIFT Esports" },
       {
         property: "og:description",
         content:
-          "Official home of RPZ CELESTIAL, a competitive VR esports org competing in Orion Drift. We offer rosters, schedules, stats, and recruitment.",
+          "Official home of CELESTIAL, a competitive VR esports org competing in Orion Drift. We offer rosters, schedules, stats, and recruitment.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -97,7 +97,7 @@ function HomePage() {
           <SectionHeader
             eyebrow="The squad"
             title="Featured Roster"
-            subtitle="Meet the core of RPZ CELESTIAL."
+            subtitle="Meet the core of CELESTIAL."
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {featuredPlayers.map((p, i) => (
@@ -142,7 +142,7 @@ function HomePage() {
         <div className="container-tight">
           <SectionHeader
             eyebrow="Who we are"
-            title="RPZ CELESTIAL"
+            title="CELESTIAL"
             subtitle="A growing EU and NA Orion Drift organization partnered with Replitz Esports, recently expanding into NA, we look to build a community up to make us a recognizable organisation in the vr comp scene, we are a upcoming top 25 team in Orion Drift, we are only just starting!"
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

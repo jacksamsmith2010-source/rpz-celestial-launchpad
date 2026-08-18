@@ -9,15 +9,15 @@ import { seasons } from "@/lib/team-data";
 export const Route = createFileRoute("/schedule")({
   head: () => ({
     meta: [
-      { title: "Schedule — RPZ CELESTIAL" },
+      { title: "Schedule — CELESTIAL" },
       {
         name: "description",
-        content: "Upcoming matches and recent results for RPZ CELESTIAL in Orion Drift.",
+        content: "Upcoming matches and recent results for CELESTIAL in Orion Drift.",
       },
-      { property: "og:title", content: "Schedule — RPZ CELESTIAL" },
+      { property: "og:title", content: "Schedule — CELESTIAL" },
       {
         property: "og:description",
-        content: "Upcoming matches and recent results for RPZ CELESTIAL in Orion Drift.",
+        content: "Upcoming matches and recent results for CELESTIAL in Orion Drift.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/schedule" },

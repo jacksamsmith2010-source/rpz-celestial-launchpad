@@ -10,17 +10,17 @@ import { partners, type Partner } from "@/lib/team-data";
 export const Route = createFileRoute("/partnerships")({
   head: () => ({
     meta: [
-      { title: "Partnerships — RPZ CELESTIAL" },
+      { title: "Partnerships — CELESTIAL" },
       {
         name: "description",
         content:
-          "The organizations partnered with RPZ CELESTIAL: RPZ Esports, VAL Esport and SXG WYVERNS.",
+          "The organizations partnered with CELESTIAL: RPZ Esports, VAL Esport and SXG WYVERNS.",
       },
-      { property: "og:title", content: "Partnerships — RPZ CELESTIAL" },
+      { property: "og:title", content: "Partnerships — CELESTIAL" },
       {
         property: "og:description",
         content:
-          "The organizations partnered with RPZ CELESTIAL: RPZ Esports, VAL Esport and SXG WYVERNS.",
+          "The organizations partnered with CELESTIAL: RPZ Esports, VAL Esport and SXG WYVERNS.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/partnerships" },
@@ -87,7 +87,7 @@ function PartnershipsPage() {
       <SectionHeader
         eyebrow="Together in orbit"
         title="Partnerships"
-        subtitle="The organizations standing beside RPZ CELESTIAL."
+        subtitle="The organizations standing beside CELESTIAL."
       />
       <div className="grid gap-6">
         {partners.map((p, i) => (

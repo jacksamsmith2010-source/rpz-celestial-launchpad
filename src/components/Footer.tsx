@@ -32,7 +32,7 @@ export function Footer() {
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
             <Link to="/" className="font-display text-xl font-bold tracking-tight">
-              RPZ <span className="text-gradient">CELESTIAL</span>
+              <span className="text-gradient">CELESTIAL</span>
             </Link>
           </div>
 
@@ -53,7 +53,7 @@ export function Footer() {
 
         <div className="relative mt-10 flex flex-col items-center justify-between gap-4 pt-6 text-xs text-muted-foreground md:flex-row">
           <span className="pointer-events-none absolute inset-x-0 top-0 h-px neon-line-h opacity-50" />
-          <p>© {new Date().getFullYear()} RPZ CELESTIAL. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} CELESTIAL. All rights reserved.</p>
           <p>Powered by stars, sweat, and zero-gravity drift.</p>
         </div>
       </div>
