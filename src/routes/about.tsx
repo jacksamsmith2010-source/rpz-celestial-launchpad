@@ -43,13 +43,14 @@ function AboutPage() {
             Orion Drift esports over the next few seasons!
           </p>
           <p>
-            Our team, also known as CELESTIAL, is composed of highly skilled players from both EU
-            and NA who are passionate about pushing the boundaries of VR gaming and competing at
-            the highest level. We strive for excellence and are dedicated to perfecting our craft
-            through constant practice and scrimming. We bring creativity and innovation to our
-            gameplay. With our unique blend of talent, determination and experience vs top teams
-            and players, we aim to make a mark in VRML and ODC and leave a lasting impact on the
-            competitive Orion Drift community.
+            Our team is composed of highly skilled players from both EU and NA
+            who are passionate about pushing the boundaries of VR gaming and
+            competing at the highest level. We strive for excellence and are
+            dedicated to perfecting our craft through constant practice and
+            scrimming. We bring creativity and innovation to our gameplay. With
+            our unique blend of talent, determination and experience vs top teams
+            and players, we aim to make a mark in VRML and ODC and leave a
+            lasting impact on the competitive Orion Drift community.
           </p>
         </div>
 
