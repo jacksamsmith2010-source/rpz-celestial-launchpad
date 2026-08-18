@@ -443,7 +443,7 @@ export const recruitment = {
 
 export const socials = [
   { name: "Discord", url: "https://discord.gg/9Y6KYU49uH", handle: "discord.gg/9Y6KYU49uH" },
-  { name: "YouTube", url: "https://www.youtube.com/@RPZCELESTIAL-EUNA", handle: "@RPZCELESTIAL-EUNA" },
+  { name: "YouTube", url: "https://www.youtube.com/@RPZCELESTIAL-EUNA", handle: "YouTube Channel" },
 ];
 
 const vrmlS1EuMatches: Match[] = [
