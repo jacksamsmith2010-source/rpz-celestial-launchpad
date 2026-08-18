@@ -14,13 +14,13 @@ export const Route = createFileRoute("/partnerships")({
       {
         name: "description",
         content:
-          "The organizations partnered with CELESTIAL: RPZ Esports, VAL Esport and SXG WYVERNS.",
+          "The organizations partnered with CELESTIAL: VAL Esport and SXG WYVERNS.",
       },
       { property: "og:title", content: "Partnerships — CELESTIAL" },
       {
         property: "og:description",
         content:
-          "The organizations partnered with CELESTIAL: RPZ Esports, VAL Esport and SXG WYVERNS.",
+          "The organizations partnered with CELESTIAL: VAL Esport and SXG WYVERNS.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/partnerships" },
