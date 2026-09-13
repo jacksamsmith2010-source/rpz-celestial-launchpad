@@ -59,16 +59,16 @@ export const sponsors: Sponsor[] = [
   {
     id: "vrml-orion-drift",
     name: "VRML Orion Drift",
-    glow: "blue",
+    glow: "bronze",
   },
   {
     id: "odc-orion-drift",
     name: "ODC Orion Drift",
-    glow: "bronze",
+    glow: "blue",
   },
   {
-    id: "spized-designer",
-    name: "Spized Designer",
+    id: "spized",
+    name: "Spized",
     glow: "violet",
   },
 ];
