@@ -10,17 +10,22 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as StatsRouteImport } from './routes/stats'
+import { Route as SponsorsRouteImport } from './routes/sponsors'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ScheduleRouteImport } from './routes/schedule'
 import { Route as RosterRouteImport } from './routes/roster'
 import { Route as RecruitmentRouteImport } from './routes/recruitment'
-import { Route as PartnershipsRouteImport } from './routes/partnerships'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
 const StatsRoute = StatsRouteImport.update({
   id: '/stats',
   path: '/stats',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SponsorsRoute = SponsorsRouteImport.update({
+  id: '/sponsors',
+  path: '/sponsors',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -43,11 +48,6 @@ const RecruitmentRoute = RecruitmentRouteImport.update({
   path: '/recruitment',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PartnershipsRoute = PartnershipsRouteImport.update({
-  id: '/partnerships',
-  path: '/partnerships',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -62,32 +62,32 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/partnerships': typeof PartnershipsRoute
   '/recruitment': typeof RecruitmentRoute
   '/roster': typeof RosterRoute
   '/schedule': typeof ScheduleRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sponsors': typeof SponsorsRoute
   '/stats': typeof StatsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/partnerships': typeof PartnershipsRoute
   '/recruitment': typeof RecruitmentRoute
   '/roster': typeof RosterRoute
   '/schedule': typeof ScheduleRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sponsors': typeof SponsorsRoute
   '/stats': typeof StatsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/partnerships': typeof PartnershipsRoute
   '/recruitment': typeof RecruitmentRoute
   '/roster': typeof RosterRoute
   '/schedule': typeof ScheduleRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sponsors': typeof SponsorsRoute
   '/stats': typeof StatsRoute
 }
 export interface FileRouteTypes {
@@ -95,42 +95,42 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
-    | '/partnerships'
     | '/recruitment'
     | '/roster'
     | '/schedule'
     | '/sitemap.xml'
+    | '/sponsors'
     | '/stats'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/partnerships'
     | '/recruitment'
     | '/roster'
     | '/schedule'
     | '/sitemap.xml'
+    | '/sponsors'
     | '/stats'
   id:
     | '__root__'
     | '/'
     | '/about'
-    | '/partnerships'
     | '/recruitment'
     | '/roster'
     | '/schedule'
     | '/sitemap.xml'
+    | '/sponsors'
     | '/stats'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  PartnershipsRoute: typeof PartnershipsRoute
   RecruitmentRoute: typeof RecruitmentRoute
   RosterRoute: typeof RosterRoute
   ScheduleRoute: typeof ScheduleRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SponsorsRoute: typeof SponsorsRoute
   StatsRoute: typeof StatsRoute
 }
 
@@ -141,6 +141,13 @@ declare module '@tanstack/react-router' {
       path: '/stats'
       fullPath: '/stats'
       preLoaderRoute: typeof StatsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sponsors': {
+      id: '/sponsors'
+      path: '/sponsors'
+      fullPath: '/sponsors'
+      preLoaderRoute: typeof SponsorsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -171,13 +178,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RecruitmentRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/partnerships': {
-      id: '/partnerships'
-      path: '/partnerships'
-      fullPath: '/partnerships'
-      preLoaderRoute: typeof PartnershipsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -198,11 +198,11 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  PartnershipsRoute: PartnershipsRoute,
   RecruitmentRoute: RecruitmentRoute,
   RosterRoute: RosterRoute,
   ScheduleRoute: ScheduleRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SponsorsRoute: SponsorsRoute,
   StatsRoute: StatsRoute,
 }
 export const routeTree = rootRouteImport

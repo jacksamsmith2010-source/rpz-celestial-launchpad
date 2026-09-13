@@ -49,33 +49,27 @@ export type Season = {
   matches: Match[];
 };
 
-export type Partner = {
+export type Sponsor = {
   id: string;
   name: string;
-  owner: string;
-  tier: "Diamond Partner" | "Bronze Partner";
-  glow: "blue" | "bronze";
-  description: string;
+  glow: "blue" | "bronze" | "violet";
 };
 
-export const partners: Partner[] = [
+export const sponsors: Sponsor[] = [
   {
-    id: "val",
-    name: "VAL Esport",
-    owner: "gregorymcboy",
-    tier: "Bronze Partner",
-    glow: "bronze",
-    description:
-      "A org helping out CELESTIAL to become more global and recognised of supporting other orgs",
+    id: "vrml-orion-drift",
+    name: "VRML Orion Drift",
+    glow: "blue",
   },
   {
-    id: "sxg",
-    name: "SXG WYVERNS",
-    owner: "SXG_GERNO",
-    tier: "Bronze Partner",
+    id: "odc-orion-drift",
+    name: "ODC Orion Drift",
     glow: "bronze",
-    description:
-      "A org helping out CELESTIAL to become more global and recognised of supporting other orgs",
+  },
+  {
+    id: "spized-designer",
+    name: "Spized Designer",
+    glow: "violet",
   },
 ];
 
@@ -148,23 +142,24 @@ export const roster: Player[] = [
     region: "NA",
   },
   {
-    id: "p8",
-    handle: "Bob34!!",
-    name: "Bob34",
-    title: "Co-Captain",
-    role: "4th/3rd press",
-    flag: "🇺🇸",
-    joined: "Jul, 2026",
-    region: "NA",
+    id: "p12",
+    handle: "WEEKLYY",
+    name: "WEEKLYY",
+    role: "1st/2nd press",
+    flag: "",
+    joined: "Aug, 2026",
+    initials: "WY",
+    region: "EU",
   },
   {
-    id: "p11",
-    handle: "Npc_dark",
-    name: "Npc_dark",
-    role: "1st/2nd press",
-    flag: "🇺🇸",
-    joined: "Jul, 2026",
-    region: "NA",
+    id: "p13",
+    handle: "Haze",
+    name: "GLATNESSPIG",
+    role: "3rd press",
+    flag: "",
+    joined: "Sept, 2026",
+    initials: "HZ",
+    region: "EU",
   },
 ];
 
@@ -430,20 +425,19 @@ export const recruitment = {
     "13+",
     "Respectful",
     "Mature",
+    "Good Passing",
     "Skilled",
-    "Good positioning",
-    "Good passing",
-    "Strong game sense",
+    "Good Positioning",
     "Communication",
     "Awareness",
     "EU or NA",
   ],
-  contact: "recruit@celestial.gg",
 };
 
 export const socials = [
   { name: "Discord", url: "https://discord.gg/9Y6KYU49uH", handle: "discord.gg/9Y6KYU49uH" },
   { name: "YouTube", url: "https://www.youtube.com/@RPZCELESTIAL-EUNA", handle: "YouTube Channel" },
+  { name: "TikTok", url: "https://www.tiktok.com/@celestial.vresports.tt", handle: "@celestial.vresports.tt" },
 ];
 
 const vrmlS1EuMatches: Match[] = [
