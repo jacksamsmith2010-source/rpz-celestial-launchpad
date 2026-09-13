@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, Check } from "lucide-react";
+import { Check } from "lucide-react";
 
 import { SectionHeader } from "@/components/SectionHeader";
 import { AnimatedSection } from "@/components/AnimatedSection";
@@ -130,23 +130,13 @@ function RecruitmentPage() {
       </div>
 
       <div className="mt-8 rounded-2xl border border-border/50 bg-gradient-to-br from-secondary to-accent p-8 text-center md:p-12">
-        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
-          <Mail size={24} />
-        </div>
-        <h3 className="mt-5 font-display text-2xl font-bold text-foreground">
+        <h3 className="font-display text-2xl font-bold text-foreground">
           Do you have what it takes to be a part of <span className="text-gradient">CELESTIAL</span>?
         </h3>
         <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
-          Send us your competitive profile, availability, and a short introduction — or hop into
-          our Discord and start the conversation.
+          Join our Discord to share your competitive profile, availability, and a short introduction.
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-          <a
-            href={`mailto:${recruitment.contact}`}
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-bold text-primary-foreground transition-all hover:bg-primary/90 hover:glow"
-          >
-            {recruitment.contact}
-          </a>
           <a
             href="https://discord.gg/9Y6KYU49uH"
             target="_blank"
@@ -154,6 +144,14 @@ function RecruitmentPage() {
             className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-8 py-4 text-sm font-bold text-primary transition-all hover:bg-primary/20"
           >
             Join our Discord
+          </a>
+          <a
+            href="https://www.tiktok.com/@celestial.vresports.tt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-8 py-4 text-sm font-bold text-primary transition-all hover:bg-primary/20"
+          >
+            Follow on TikTok
           </a>
         </div>
       </div>

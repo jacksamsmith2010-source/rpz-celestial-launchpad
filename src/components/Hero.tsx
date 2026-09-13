@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
-import { ChevronRight, MessageCircle } from "lucide-react";
+import { ChevronRight, MessageCircle, Music2 } from "lucide-react";
 
 export function Hero() {
   const reduced = useReducedMotion();
@@ -53,6 +53,15 @@ export function Hero() {
           >
             <MessageCircle size={16} />
             Join Discord
+          </a>
+          <a
+            href="https://www.tiktok.com/@celestial.vresports.tt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-6 py-3 text-sm font-bold text-primary transition-all hover:bg-primary/20"
+          >
+            <Music2 size={16} />
+            TikTok
           </a>
         </motion.div>
       </div>

@@ -5,35 +5,36 @@ import { ChevronDown, Handshake } from "lucide-react";
 
 import { SectionHeader } from "@/components/SectionHeader";
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { partners, type Partner } from "@/lib/team-data";
+import { sponsors, type Sponsor } from "@/lib/team-data";
 
-export const Route = createFileRoute("/partnerships")({
+export const Route = createFileRoute("/sponsors")({
   head: () => ({
     meta: [
-      { title: "Partnerships — CELESTIAL" },
+      { title: "Sponsors — CELESTIAL" },
       {
         name: "description",
         content:
-          "The organizations partnered with CELESTIAL: VAL Esport and SXG WYVERNS.",
+          "Meet the leagues and creative sponsor supporting CELESTIAL.",
       },
-      { property: "og:title", content: "Partnerships — CELESTIAL" },
+      { property: "og:title", content: "Sponsors — CELESTIAL" },
       {
         property: "og:description",
         content:
-          "The organizations partnered with CELESTIAL: VAL Esport and SXG WYVERNS.",
+          "Meet the leagues and creative sponsor supporting CELESTIAL.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/partnerships" },
+      { property: "og:url", content: "/sponsors" },
+      { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "/partnerships" }],
+    links: [{ rel: "canonical", href: "/sponsors" }],
   }),
   component: PartnershipsPage,
 });
 
-function PartnerCard({ partner, delay }: { partner: Partner; delay: number }) {
+function SponsorCard({ sponsor, delay }: { sponsor: Sponsor; delay: number }) {
   const [open, setOpen] = useState(false);
   const glow =
-    partner.glow === "blue" ? "glow-blue" : partner.glow === "bronze" ? "glow-bronze" : "glow-gold";
+    sponsor.glow === "blue" ? "glow-blue" : sponsor.glow === "bronze" ? "glow-bronze" : "glow";
 
   return (
     <motion.div
@@ -52,10 +53,9 @@ function PartnerCard({ partner, delay }: { partner: Partner; delay: number }) {
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-border/50 bg-background/40 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
             <Handshake size={12} />
-            {partner.tier}
+             {sponsor.category}
           </span>
-          <h2 className="mt-3 font-display text-2xl font-bold text-foreground">{partner.name}</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Owned by {partner.owner}</p>
+           <h2 className="mt-3 font-display text-2xl font-bold text-foreground">{sponsor.name}</h2>
         </div>
         <ChevronDown
           size={20}
@@ -72,7 +72,7 @@ function PartnerCard({ partner, delay }: { partner: Partner; delay: number }) {
             className="overflow-hidden"
           >
             <p className="border-t border-border/50 px-6 py-5 text-sm leading-6 text-muted-foreground">
-              {partner.description}
+               {sponsor.description}
             </p>
           </motion.div>
         )}
@@ -85,13 +85,13 @@ function PartnershipsPage() {
   return (
     <AnimatedSection className="container-tight pb-20 pt-32 md:pb-28">
       <SectionHeader
-        eyebrow="Together in orbit"
-        title="Partnerships"
-        subtitle="The organizations standing beside CELESTIAL."
+        eyebrow="Supporting the mission"
+        title="Sponsors"
+        subtitle="The leagues and creative talent supporting CELESTIAL."
       />
       <div className="grid gap-6">
-        {partners.map((p, i) => (
-          <PartnerCard key={p.id} partner={p} delay={i * 0.08} />
+        {sponsors.map((sponsor, i) => (
+          <SponsorCard key={sponsor.id} sponsor={sponsor} delay={i * 0.08} />
         ))}
       </div>
     </AnimatedSection>

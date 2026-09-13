@@ -12,7 +12,7 @@ const nav = [
   { label: "Stats", to: "/stats" },
   { label: "About", to: "/about" },
   { label: "Recruitment", to: "/recruitment" },
-  { label: "Partnerships", to: "/partnerships" },
+  { label: "Sponsors", to: "/sponsors" },
 ];
 
 export function Header() {
