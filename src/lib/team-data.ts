@@ -52,32 +52,24 @@ export type Season = {
 export type Sponsor = {
   id: string;
   name: string;
-  category: string;
   glow: "blue" | "bronze" | "violet";
-  description: string;
 };
 
 export const sponsors: Sponsor[] = [
   {
     id: "vrml-orion-drift",
     name: "VRML Orion Drift",
-    category: "League Sponsor",
     glow: "blue",
-    description: "Supporting competitive Orion Drift through organized league play.",
   },
   {
     id: "odc-orion-drift",
     name: "ODC Orion Drift",
-    category: "Competition Sponsor",
     glow: "bronze",
-    description: "Supporting CELESTIAL competition in the Orion Drift community.",
   },
   {
     id: "spized-designer",
     name: "Spized Designer",
-    category: "Creative Sponsor",
     glow: "violet",
-    description: "Creative design support for CELESTIAL.",
   },
 ];
 

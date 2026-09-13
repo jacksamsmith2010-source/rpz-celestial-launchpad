@@ -1,7 +1,6 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Handshake } from "lucide-react";
+import { motion } from "framer-motion";
+import { Handshake } from "lucide-react";
 
 import { SectionHeader } from "@/components/SectionHeader";
 import { AnimatedSection } from "@/components/AnimatedSection";
@@ -28,11 +27,10 @@ export const Route = createFileRoute("/sponsors")({
     ],
     links: [{ rel: "canonical", href: "/sponsors" }],
   }),
-  component: PartnershipsPage,
+  component: SponsorsPage,
 });
 
 function SponsorCard({ sponsor, delay }: { sponsor: Sponsor; delay: number }) {
-  const [open, setOpen] = useState(false);
   const glow =
     sponsor.glow === "blue" ? "glow-blue" : sponsor.glow === "bronze" ? "glow-bronze" : "glow";
 
@@ -44,44 +42,18 @@ function SponsorCard({ sponsor, delay }: { sponsor: Sponsor; delay: number }) {
       transition={{ duration: 0.45, delay }}
       className={`rounded-2xl border bg-card ${glow}`}
     >
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
-        className="flex w-full items-center justify-between gap-4 p-6 text-left"
-      >
-        <div>
-          <span className="inline-flex items-center gap-2 rounded-full border border-border/50 bg-background/40 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
-            <Handshake size={12} />
-             {sponsor.category}
-          </span>
-           <h2 className="mt-3 font-display text-2xl font-bold text-foreground">{sponsor.name}</h2>
-        </div>
-        <ChevronDown
-          size={20}
-          className={`shrink-0 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`}
-        />
-      </button>
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            className="overflow-hidden"
-          >
-            <p className="border-t border-border/50 px-6 py-5 text-sm leading-6 text-muted-foreground">
-               {sponsor.description}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <div className="p-6">
+        <span className="inline-flex items-center gap-2 rounded-full border border-border/50 bg-background/40 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
+          <Handshake size={12} />
+          Sponsor
+        </span>
+        <h2 className="mt-3 font-display text-2xl font-bold text-foreground">{sponsor.name}</h2>
+      </div>
     </motion.div>
   );
 }
 
-function PartnershipsPage() {
+function SponsorsPage() {
   return (
     <AnimatedSection className="container-tight pb-20 pt-32 md:pb-28">
       <SectionHeader
