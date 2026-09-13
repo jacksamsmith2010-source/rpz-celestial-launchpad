@@ -7,7 +7,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { sponsors, type Sponsor } from "@/lib/team-data";
 
-export const Route = createFileRoute("/sponsors")({
+export const Route = createFileRoute("/partnerships")({
   head: () => ({
     meta: [
       { title: "Sponsors — CELESTIAL" },
