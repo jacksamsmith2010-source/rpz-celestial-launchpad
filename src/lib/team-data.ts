@@ -425,7 +425,7 @@ export const recruitment = {
     "13+",
     "Respectful",
     "Mature",
-    "Good passing",
+    "Good Passing",
     "Skilled",
     "Good Positioning",
     "Communication",
