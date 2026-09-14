@@ -29,12 +29,13 @@ export const Route = createFileRoute("/recruitment")({
 
 function RecruitmentPage() {
   const wants = [
-    { icon: "⏰️", text: "active players" },
-    { icon: "🤝", text: "respectful" },
+    { icon: "⚡️", text: "active players & members" },
     { icon: "🗣️", text: "good communication" },
-    { icon: "⚽️", text: "good passing" },
-    { icon: "🫂", text: "good sport" },
-    { icon: "💜", text: "Looking for loyal, kind members & server boosters to grow our community" },
+    { icon: "⚽️", text: "good passing & skill" },
+    { icon: "🧠", text: "competitive mindset" },
+    { icon: "🤝", text: "respectful/responsable people" },
+    { icon: "🎨", text: "Graphic designers/editors" },
+    { icon: "💜", text: "Looking for members to boost the server & to grow our community (this would mean a lot)" },
   ];
   const dontWants = [
     { icon: "🗣️", text: "toxicity / non-supportive" },
@@ -43,12 +44,14 @@ function RecruitmentPage() {
     { icon: "⏰️", text: "not active / too busy" },
   ];
   const offers = [
-    { icon: "👥️", text: "EU / NA teams" },
+    { icon: "👥️", text: "recruiting players" },
+    { icon: "🎯", text: "daily tryouts" },
     { icon: "⚔️", text: "daily scrims" },
-    { icon: "🥅", text: "daily team practice" },
-    { icon: "🎯", text: "tryouts" },
-    { icon: "🏆", text: "fun & competitive team" },
-    { icon: "⚡️", text: "active teams / community" },
+    { icon: "🏆", text: "competitive team to support & play for" },
+    { icon: "⚡️", text: "active teams/community" },
+    { icon: "🤝", text: "team partnerships" },
+    { icon: "🎉", text: "team events and entertainment" },
+    { icon: "💡", text: "suggestions on what we can do to make a better community" },
   ];
 
   return (
@@ -58,8 +61,8 @@ function RecruitmentPage() {
       <div className="mt-10 rounded-2xl border border-primary/20 bg-primary/5 p-8 text-center md:p-10">
         <h3 className="font-display text-2xl font-bold text-foreground">What are we looking for?</h3>
         <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
-          We are looking for mature and respectful people who are good and are well rounded in
-          their skill.
+          We are looking for active, respectful and well-rounded players and members who want to
+          grow with the team.
         </p>
       </div>
 
