@@ -100,7 +100,7 @@ function RecruitmentPage() {
         <div className="rounded-2xl border border-primary/30 bg-primary/5 p-6">
           <div className="flex items-center gap-2">
             <span className="text-lg">✨️</span>
-            <h3 className="font-display text-lg font-bold text-foreground">What We Offer</h3>
+            <h3 className="font-display text-lg font-bold text-foreground">Why You Should Join</h3>
           </div>
           <ul className="mt-4 space-y-3">
             {offers.map((w) => (
